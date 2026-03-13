@@ -8,7 +8,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/styles.css" />
 <script defer src="/assets/js/main.js"></script>
-  <title>Home - Yuriy Tkach</title>
+  <title>Volunteering - Yuriy Tkach</title>
 </head>
 <body>
   <header class="site-header">
@@ -26,23 +26,12 @@
 </header>
   <main>
 <section class="hero wrap">
-  <p class="kicker">Systems Architect / Team Lead</p>
-  <h1>Yuriy Tkach</h1>
-  <p class="lead">I build robust backend systems, design scalable architecture, and support teams through pragmatic engineering leadership across Java, Scala, and cloud-native stacks.</p>
-  <p>
-    <a class="btn" href="/resume/">View resume</a>
-    <a class="btn alt" href="/volunteer/">See volunteering work</a>
-  </p>
+  <p class="kicker">Volunteering initiative</p>
+  <h1>Direct Help for Ukraine</h1>
+  <p class="lead">Reports and fundraisers supporting Ukrainian Armed Forces. Posts are listed below and each opens as a standalone page.</p>
 </section>
-<section class="section wrap grid cards-2">
-  <article class="card">
-    <h2>Professional experience</h2>
-    <p>Hands-on architecture and software development across fintech, blockchain, productivity tooling, and enterprise systems.</p>
-  </article>
-  <article class="card">
-    <h2>Teaching and community</h2>
-    <p>Long-running education work through training programs and videos for engineers at multiple experience levels.</p>
-  </article>
+<section class="section wrap">
+  <div id="posts" class="post-grid" aria-live="polite"></div>
 </section>
 </main>
   <footer class="site-footer">
@@ -60,6 +49,6 @@
   </div>
   <p class="copyright">&copy; <span id="year"></span> Yuriy Tkach</p>
 </footer>
-  
+  <script defer src="/assets/js/volunteer.js"></script>
 </body>
 </html>
