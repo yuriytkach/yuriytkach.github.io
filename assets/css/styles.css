@@ -182,7 +182,7 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
 }
 .hero-banner--contact {
   --hero-image: url('/assets/images/hero-contact.jpg');
-  --hero-position: center top;
+  --hero-position: center 15%;
   --hero-overlay: linear-gradient(180deg, rgba(34, 22, 15, 0.18) 0%, rgba(22, 22, 30, 0.72) 100%);
 }
 
