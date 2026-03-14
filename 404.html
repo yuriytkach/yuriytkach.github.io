@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Literata:opsz,wght@7..72,500;7..72,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/styles.css" />
+  <title>Page Not Found - Yuriy Tkach</title>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav-row">
+      <a class="brand logo-brand" href="/"><img src="/assets/images/logo-software-developer.png" alt="Yuriy Tkach" class="site-logo" /></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="site-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/resume/">Resume</a>
+        <a href="/volunteer/">Volunteering</a>
+        <a href="/calendar/">Calendar</a>
+        <a href="/contact/">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero-banner">
+      <div class="hero-banner-content wrap">
+        <p class="hero-kicker">404</p>
+        <h1 class="hero-title">Page Not Found</h1>
+        <p class="hero-subtitle" id="redirect-status">Looking for this page…</p>
+      </div>
+    </div>
+    <section class="wrap" style="padding: 2rem 0; text-align: center;">
+      <p id="not-found-msg" style="display:none;">This page doesn't exist. Try one of these:</p>
+      <nav style="margin-top: 1rem;">
+        <a class="btn" href="/">Home</a>
+        <a class="btn alt" href="/volunteer/">All Volunteer Posts</a>
+      </nav>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <p class="footer-title">Kyiv, Ukraine</p>
+        <a href="mailto:me@yuriytkach.com">me@yuriytkach.com</a>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/yuriytkach" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/yuriytkach" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.youtube.com/channel/UCdXqgQdGW5go6nkkBbUVSMA" target="_blank" rel="noopener">YouTube</a>
+        <a href="https://www.buymeacoffee.com/ytkach" target="_blank" rel="noopener">Buy Me a Coffee</a>
+      </div>
+    </div>
+    <p class="copyright">&copy; <span id="year"></span> Yuriy Tkach</p>
+  </footer>
+  <script defer src="/assets/js/main.js"></script>
+  <script>
+    (function() {
+      var path = window.location.pathname;
+      var statusEl = document.getElementById('redirect-status');
+      var notFoundEl = document.getElementById('not-found-msg');
+
+      function redirect(url) {
+        statusEl.textContent = 'Redirecting…';
+        window.location.replace(url);
+      }
+
+      // Only try smart redirect for /volunteer/ paths
+      if (!path.startsWith('/volunteer/')) {
+        statusEl.textContent = '';
+        notFoundEl.style.display = 'block';
+        return;
+      }
+
+      // /volunteer/tag/... → /volunteer/
+      if (path.startsWith('/volunteer/tag/')) {
+        redirect('/volunteer/');
+        return;
+      }
+
+      fetch('/data/volunteer-posts.json')
+        .then(function(r) { return r.json(); })
+        .then(function(posts) {
+          var parts = path.replace(/\/$/, '').split('/').filter(Boolean);
+          // parts[0] = 'volunteer'
+
+          var bareSlug = parts[parts.length - 1];
+
+          // Build lookup maps
+          var bySlug = {};
+          var byBareSlug = {};
+          posts.forEach(function(p) {
+            bySlug[p.slug] = p.slug;
+            // bare slug = last hyphen-separated segment after date prefix
+            // e.g. "2022-7-23-fundraiser-thermal-rifle-scope" → bare = last part after date
+            // Extract by removing leading YYYY-M-D- prefix if present
+            var m = p.slug.match(/^\d{4}-\d{1,2}-\d{1,2}-(.+)$/);
+            if (m) {
+              byBareSlug[m[1]] = p.slug;
+            } else {
+              byBareSlug[p.slug] = p.slug;
+            }
+          });
+
+          var newSlug = null;
+
+          if (parts.length === 2) {
+            // /volunteer/SLUG
+            newSlug = bySlug[bareSlug] || byBareSlug[bareSlug];
+          } else if (parts.length >= 4) {
+            // /volunteer/YYYY/M/D/SLUG or similar date-path
+            newSlug = bySlug[bareSlug] || byBareSlug[bareSlug];
+          }
+
+          if (newSlug) {
+            redirect('/volunteer/posts/' + newSlug + '/');
+          } else {
+            redirect('/volunteer/');
+          }
+        })
+        .catch(function() {
+          statusEl.textContent = '';
+          notFoundEl.style.display = 'block';
+        });
+    })();
+  </script>
+</body>
+</html>

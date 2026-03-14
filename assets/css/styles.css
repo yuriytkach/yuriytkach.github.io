@@ -174,3 +174,10 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   font-size: 0.82rem;
   color: var(--muted);
 }
+
+/* About / bio section */
+.about-section { padding: 3rem 0 2rem; }
+.about-heading { font-family: 'Space Grotesk', monospace; font-size: 1.4rem; color: var(--accent); margin-bottom: 1rem; }
+.about-brace { opacity: 0.5; }
+.about-body { font-size: 1.05rem; line-height: 1.7; max-width: 720px; }
+.about-close { font-family: 'Space Grotesk', monospace; font-size: 1.4rem; color: var(--accent); opacity: 0.5; }
