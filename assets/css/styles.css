@@ -138,3 +138,14 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   .site-nav { display: none; position: absolute; right: 4vw; top: 62px; flex-direction: column; align-items: stretch; background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: .5rem; box-shadow: var(--shadow); }
   .site-nav.open { display: flex; }
 }
+/* Timeline with logo */
+.timeline article { display: grid; grid-template-columns: 64px 1fr; gap: 0.5rem 1rem; border-left: none; padding-left: 0; }
+.timeline-logo { grid-column: 1; grid-row: 1 / span 10; }
+.timeline-logo img { width: 56px; height: auto; border-radius: 6px; }
+.timeline time { grid-column: 2; }
+.timeline h3 { grid-column: 2; }
+.timeline p, .timeline ul { grid-column: 2; }
+/* 3-column cards grid */
+.cards-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+@media (max-width: 900px) { .cards-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .cards-3 { grid-template-columns: 1fr; } }
