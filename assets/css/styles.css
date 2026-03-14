@@ -197,7 +197,8 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   gap: 1.25rem;
   align-items: stretch;
 }
-.feature-card {
+.feature-card,
+.feature-card:hover {
   position: relative;
   display: block;
   min-height: 280px;
