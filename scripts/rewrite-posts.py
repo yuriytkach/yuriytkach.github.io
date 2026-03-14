@@ -23,12 +23,30 @@ def sqs_url_to_local(url):
 def fix_volunteer_links(html):
     """Fix /volunteer/SLUG links to /volunteer/posts/SLUG/"""
     slugs = {p["slug"] for p in ALL_POSTS}
+    # Build bare-slug -> full-slug map for date-prefixed slugs (YYYY-M-D-REST)
+    bare_to_slug = {}
+    for p in ALL_POSTS:
+        m = re.match(r"^\d{4}-\d{1,2}-\d{1,2}-(.+)$", p["slug"])
+        if m:
+            bare_to_slug[m.group(1)] = p["slug"]
 
     def replace_link(m):
         href = m.group(1)
         parts = href.strip("/").split("/")
+        # Handle /volunteer/SLUG (2-segment)
         if len(parts) == 2 and parts[0] == "volunteer" and parts[1] in slugs:
             return f'href="/volunteer/posts/{parts[1]}/"'
+        # Handle /volunteer/YYYY/M/D/SLUG (date-path)
+        if len(parts) >= 4 and parts[0] == "volunteer":
+            bare = parts[-1].rstrip("-")
+            if bare in slugs:
+                return f'href="/volunteer/posts/{bare}/"'
+            if bare in bare_to_slug:
+                return f'href="/volunteer/posts/{bare_to_slug[bare]}/"'
+            # Prefix-match fallback (e.g. trailing-dash URLs with jdhz suffix stripped)
+            candidates = [k for k in bare_to_slug if k.startswith(bare)]
+            if len(candidates) == 1:
+                return f'href="/volunteer/posts/{bare_to_slug[candidates[0]]}/"'
         return m.group(0)
 
     return re.sub(r'href="(/volunteer/[^/"#][^"]*)"', replace_link, html)
@@ -124,11 +142,10 @@ def build_gallery(images):
     items = []
     for img in images:
         alt = img["alt"]
-        caption = (
-            f"<figcaption>{alt}</figcaption>"
-            if alt and not alt.startswith("/assets")
-            else ""
-        )
+        # Suppress captions that are filenames (e.g. photo.jpg) or paths
+        is_filename = bool(re.search(r"\.\w{2,5}$", alt.strip())) if alt else False
+        show_caption = alt and not alt.startswith("/assets") and not is_filename
+        caption = f"<figcaption>{alt}</figcaption>" if show_caption else ""
         items.append(
             f'    <figure class="post-gallery-item"><img src="{img["local"]}" alt="{alt}" loading="lazy" onerror="this.parentElement.style.display=\'none\'">{caption}</figure>'
         )
