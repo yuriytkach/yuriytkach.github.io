@@ -5,7 +5,7 @@
     "dateISO": "2024-10-24",
     "dateHuman": "Oct 24, 2024",
     "excerpt": "Thank you to everyone who contributed to our fundraiser for the Vortex Impact 4000 laser range finder for a defender from the 48th OSB of the 72nd brigade! Your support means so much and has a direct impact on our soldie...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1729789831837-AXCRKVMVX8YPYOW727SL/soldier_with_vortex.jpg"
+    "cover": "/assets/images/posts/soldier_with_vortex.jpg"
   },
   {
     "slug": "fundraiser-laser-rangerinder-ua",
@@ -13,7 +13,7 @@
     "dateISO": "2024-09-28",
     "dateHuman": "Sep 28, 2024",
     "excerpt": "View Donations Збір завершено! Дякую всім! Звіт тут Привіт, друзі! Прошу вашої допомоги в зборі на лазерний далекомір Vortex Impact 4000 для захисника з 48го ОСБ 72ої бригади. Цей прилад невеликий і легкий, чіпляється пр...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1727542113417-6XKGPYUPKTUOCV55NPFR/telemetro-fundraiser.png"
+    "cover": "/assets/images/posts/telemetro-fundraiser.png"
   },
   {
     "slug": "fundraiser-uav",
@@ -21,7 +21,7 @@
     "dateISO": "2024-06-11",
     "dateHuman": "Jun 11, 2024",
     "excerpt": "Hello, friends! The guys from the 48th battalion of the 72nd brigade need a special reconnaissance UAV to better guide their FPV drones (including those that we’ve provided to them ). The UAV is special and not cheap. Th...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1707592698089-0ZU7T5BMPUYS0LSO5HO0/drone-huge-fundraiser.png"
+    "cover": "/assets/images/posts/drone-huge-fundraiser.png"
   },
   {
     "slug": "report-fundraiser-night-vision",
@@ -29,7 +29,7 @@
     "dateISO": "2024-06-10",
     "dateHuman": "Jun 10, 2024",
     "excerpt": "Thank you to everyone who contributed to our fundraiser for a night vision monocular for the 48th battalion of the 72nd brigade defending us in the Donetsk direction! Your support plays a crucial role in enhancing the sa...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1719741334443-V1694I5Z1BCTQMKIESDY/soldier.jpg"
+    "cover": "/assets/images/posts/soldier.jpg"
   },
   {
     "slug": "fundraiser-night-vision",
@@ -37,7 +37,7 @@
     "dateISO": "2024-05-01",
     "dateHuman": "May 01, 2024",
     "excerpt": "View Donations Update: Fundraiser is closed. Thank you everyone. Report is here Greetings to all! And again our soldiers need your help! 🙏 💥 A new fundraiser for a night vision device for our soldiers from the 48th batta...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1714561461883-5EIKBEHHHSS0H4YE9RVU/-fundraiser-nx-olx-round.png"
+    "cover": "/assets/images/posts/-fundraiser-nx-olx-round.png"
   },
   {
     "slug": "report-fundraiser-endoprosthesis",
@@ -45,7 +45,7 @@
     "dateISO": "2024-03-25",
     "dateHuman": "Mar 25, 2024",
     "excerpt": "Friends, your support once again showed incredible results! 🤗 A huge thank you to everyone who contributed to the endoprosthesis fundraiser for our soldier from the 72nd Brigade. Your generosity and compassion will help...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1712505597778-LI1WR3FQVN2K5SEL42VC/done.jpg"
+    "cover": "/assets/images/posts/done.jpg"
   },
   {
     "slug": "fundraiser-endoprosthesis-ua",
@@ -53,7 +53,7 @@
     "dateISO": "2024-03-04",
     "dateHuman": "Mar 04, 2024",
     "excerpt": "View Donations Збір закрито. Дякую всім! Звіт тут Вітаю, друзі! 🌟 Маю одне важливе прохання до вас. Ми разом вже зробили чимало, допомагаючи нашим захисникам. Наша нова мета — зібрати кошти на ендопротез для суглобу бійц...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1709586796437-F83E8BRH18O4I6TWUVI9/endo-round2.png"
+    "cover": "/assets/images/posts/endo-round2.png"
   },
   {
     "slug": "report-fundraiser-pickup-truck-repair-ssjtz",
@@ -61,7 +61,7 @@
     "dateISO": "2024-02-01",
     "dateHuman": "Feb 01, 2024",
     "excerpt": "Hey Everyone! Big news from the front lines of community action - we've been on a mission to get a pickup truck for our brave soldiers, and guess what? We did it, but with an exciting twist! The initial goal of the fundr...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1707585680667-01GUZ0QOEY5JVOBFJQ6K/car.jpg"
+    "cover": "/assets/images/posts/car.jpg"
   },
   {
     "slug": "fundraiser-car-drone-warriors-ua",
@@ -69,7 +69,7 @@
     "dateISO": "2024-01-08",
     "dateHuman": "Jan 08, 2024",
     "excerpt": "View Donations Оновлення: Збір закрито! Всім дякую! Звіт тут Вітаю, друзі! 🌟 Сьогодні перед нами новий виклик: нам потрібен автомобіль для того самого підрозділу, для якого ми збирали кошти на FPV дрони-камікадзе . Цей а...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1700485998226-JGY9T5FCBPRM24GF4PS1/truck-droneguys-fundraiser.png"
+    "cover": "/assets/images/posts/truck-droneguys-fundraiser.png"
   },
   {
     "slug": "report-fundraiser-fpv-2",
@@ -77,7 +77,7 @@
     "dateISO": "2024-01-07",
     "dateHuman": "Jan 07, 2024",
     "excerpt": "Many thanks to everyone who participated the fundraiser for the additional FPV drones for soldiers of the 72nd brigade of Ukrainian Armed Forces that are located in the Donetsk region. Those drones have a huge impact on...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1704695421026-G5DUE2S92JMLV38KZY3D/20240107_112222.jpg"
+    "cover": "/assets/images/posts/20240107_112222.jpg"
   },
   {
     "slug": "fundraiser-fpv-ua",
@@ -85,7 +85,7 @@
     "dateISO": "2023-12-01",
     "dateHuman": "Dec 01, 2023",
     "excerpt": "--> 100% 1000$ View Donations Оновлення: Збір закрито! Всім дякую! Звіт тут Привіт, друзі! 🚀 Пам'ятаєте наш минулий збір на 7 FPV дронів-камікадзе ? Ваша неймовірна підтримка допомогла нам досягти цієї мети! 🎉 Тепер пере...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1697573690347-J3KEP5COD8GBDSME54B1/fpv-fundraiser.png"
+    "cover": "/assets/images/posts/fpv-fundraiser.png"
   },
   {
     "slug": "report-fundraiser-fpv-1",
@@ -93,7 +93,7 @@
     "dateISO": "2023-11-30",
     "dateHuman": "Nov 30, 2023",
     "excerpt": "Our kamikaze drone FPV fundraiser was a success! 👍 Huge thanks to everyone who participated! Your support is what drives us forward to Victory. The drones have already been paid for, and we are now waiting for the delive...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1704696209506-QRKQED72A95TBYJZ3SJ9/20240107_112823.jpg"
+    "cover": "/assets/images/posts/20240107_112823.jpg"
   },
   {
     "slug": "fundraiser-fpv-ua-1",
@@ -101,7 +101,7 @@
     "dateISO": "2023-10-18",
     "dateHuman": "Oct 18, 2023",
     "excerpt": "--> 100% 1000$ View Donations Оновлення: Збір закрито! Всім дякую! Звіт тут Вітаю, друзі! 🌟 Маю для вас новий виклик, який зробить життя нашого ворога трохи... \"цікавішим\". Нам потрібні дрони, які здатні не просто стежит...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1697573690347-J3KEP5COD8GBDSME54B1/fpv-fundraiser.png"
+    "cover": "/assets/images/posts/fpv-fundraiser.png"
   },
   {
     "slug": "fundraiser-everyday-needs-2",
@@ -109,7 +109,7 @@
     "dateISO": "2023-09-27",
     "dateHuman": "Sep 27, 2023",
     "excerpt": "Дякую всім, хто долучився до збору коштів! На зібрані кошти були придбані аккумулятори, зарядний пристрій та чохол для тепловізора Pulsar, який ми передавали хлопцям минулого року! Остаток коштів було переведено на поточ...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1697629299744-FFRMYNSQCOW16JMKKV4G/pulsar-accessories.jpg"
+    "cover": "/assets/images/posts/pulsar-accessories.jpg"
   },
   {
     "slug": "report-fundraiser-pickup-truck-repair",
@@ -117,7 +117,7 @@
     "dateISO": "2023-09-26",
     "dateHuman": "Sep 26, 2023",
     "excerpt": "I am elated to announce the successful conclusion of our fundraiser aimed at facilitating the repair of several vehicles for one unit of the 72nd brigade of the Armed Forces of Ukraine! The soldiers are now better equipp...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1695826863179-K7JKRFMSD7SPA694ZUL8/all-cars.jpg"
+    "cover": "/assets/images/posts/all-cars.jpg"
   },
   {
     "slug": "fundraiser-pickup-truck-repair",
@@ -125,7 +125,7 @@
     "dateISO": "2023-08-09",
     "dateHuman": "Aug 09, 2023",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! Greetings, friends! Despite the inhumane conditions, the Armed Forces of Ukraine continue to fight for us and our freedom. They stand firm, and even iron can en...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1691582504528-RSXCPH0SLY7JXIKCVT44/fundraiser-car-repair-round.png"
+    "cover": "/assets/images/posts/fundraiser-car-repair-round.png"
   },
   {
     "slug": "fundraiser-pickup-truck-repair-ua",
@@ -133,7 +133,7 @@
     "dateISO": "2023-08-08",
     "dateHuman": "Aug 08, 2023",
     "excerpt": "View Donations Оновлення: Збір закрито! Всім дякую! Вiтaю, друзi! Попри нелюдськi умови ЗСУ продовжують боротьбу зa нaс з Вaми. Вони стiйко тримaються, i їхнiй силi може позaздрити нaвiть зaлiзо! Яке, нaжaль, лaмaється.....",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1691581614751-JI1X6N9STAXNNVT7ZMD9/fundraiser-car-repair-round.png"
+    "cover": "/assets/images/posts/fundraiser-car-repair-round.png"
   },
   {
     "slug": "report-fundraiser-starlink-2x",
@@ -141,7 +141,7 @@
     "dateISO": "2023-08-07",
     "dateHuman": "Aug 07, 2023",
     "excerpt": "From me and from Ukrainian soldiers of the 72nd brigade I want to thank everyone for your help in raising funds for two Starlink kits . Reliable and fast communication is very crucial for our defenders. One kit was neede...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1691579791685-I37DBE6F4ECGMUUFIA3H/solder-with-starlink-1.jpg"
+    "cover": "/assets/images/posts/solder-with-starlink-1.jpg"
   },
   {
     "slug": "fundraiser-starlink-2x-ua",
@@ -149,7 +149,7 @@
     "dateISO": "2023-07-19",
     "dateHuman": "Jul 19, 2023",
     "excerpt": "View Donations Оновлення: Збір закрито! Всім дякую! Вітаю шановне товариство! Кілька місяців тому ми купили для військових з 72 бригади старлінк . Нєскрєпне, бісовське приладдя вірою і правдою служило на передовій, допом...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1689785305974-TYXT1PMRPP61VUL5N824/bad-st.png"
+    "cover": "/assets/images/posts/bad-st.png"
   },
   {
     "slug": "fundraiser-starlink-2x",
@@ -157,7 +157,7 @@
     "dateISO": "2023-07-19",
     "dateHuman": "Jul 19, 2023",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! Greetings! A few months ago, we bought a Starlink for the troops of the 72nd brigade. The friendly equipment faithfully served on the front line, helping to des...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1689785381309-TH9HQBSVWFMMZYYBK8ZJ/bad-st.png"
+    "cover": "/assets/images/posts/bad-st.png"
   },
   {
     "slug": "report-fundraiser-night-vision-2",
@@ -165,7 +165,7 @@
     "dateISO": "2023-07-18",
     "dateHuman": "Jul 18, 2023",
     "excerpt": "Many thanks to everyone who participated the fundraiser for the night vision device for soldiers of the 72nd brigade of Ukrainian armed forces. A glorious soldier sent a photo with your gift, and conveys words of heartfe...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1689768972565-4HTAILFPOCDGO8B38STS/soldier-with-nv-fero.jpg"
+    "cover": "/assets/images/posts/soldier-with-nv-fero.jpg"
   },
   {
     "slug": "fundraiser-night-vision-2",
@@ -173,7 +173,7 @@
     "dateISO": "2023-06-26",
     "dateHuman": "Jun 26, 2023",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! Hello friends! I’ve received another request from our soldiers of the 48th assault battalion of the 72 brigade of Ukrainian Armed Forces - they urgently need on...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1684592604127-W397YZR66Z7UX869TS9O/nv-fero-fundraiser-round.png"
+    "cover": "/assets/images/posts/nv-fero-fundraiser-round.png"
   },
   {
     "slug": "fundraiser-night-vision-driver-report",
@@ -181,7 +181,7 @@
     "dateISO": "2023-06-25",
     "dateHuman": "Jun 25, 2023",
     "excerpt": "Thank you everyone who joined the fundraiser for the night vision device for a driver of the evacuation pick up! Need I say how important this purchase was? Saving the priceless lives of our heroes is a huge contribution...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1687812777030-K5TU2MKYIV0IV8RQLBVX/20230608_110810.jpg"
+    "cover": "/assets/images/posts/20230608_110810.jpg"
   },
   {
     "slug": "fundraiser-night-vision-driver",
@@ -189,7 +189,7 @@
     "dateISO": "2023-05-20",
     "dateHuman": "May 20, 2023",
     "excerpt": "View Donations Оновлення: Збір закрито! Всім дякую! Вітаю, друзі! Слава ЗСУ - нашим Титанам, що дали нам змогу відзначити “Свято 200 тисяч”!!! Героям Слава! ✨ Ми вклоняємось до землі перед їхніми звитягами, і маємо за че...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1684592604127-W397YZR66Z7UX869TS9O/nv-fero-fundraiser-round.png"
+    "cover": "/assets/images/posts/nv-fero-fundraiser-round.png"
   },
   {
     "slug": "everyday-needs-report",
@@ -197,7 +197,7 @@
     "dateISO": "2023-05-15",
     "dateHuman": "May 15, 2023",
     "excerpt": "Thank you to everyone who participated in the collection of funds for various things for the units of the Armed Forces of Ukraine! Thanks to all of you, I was able to raise the necessary amount and buy the items that the...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1684591262665-3MLTLCYYF59U9IVWR9L0/72ombr-radios.jpg"
+    "cover": "/assets/images/posts/72ombr-radios.jpg"
   },
   {
     "slug": "fundraiser-everyday-needs",
@@ -205,7 +205,7 @@
     "dateISO": "2023-03-10",
     "dateHuman": "Mar 10, 2023",
     "excerpt": "View Donations Друзі! Дякую всім, хто долучається до моїх зборів коштів для закупівлі різного обладнання для підрозділів ЗСУ. Війна триває, і наші воїни потребують нашої підтримки. Завжди нагальними є потреби у пальному...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/d5c69acc-4c27-41f9-b6e1-dbaee41825f2/fundraiser-everyday.png"
+    "cover": "/assets/images/posts/fundraiser-everyday.png"
   },
   {
     "slug": "motorola-repeater-report",
@@ -213,7 +213,7 @@
     "dateISO": "2023-03-01",
     "dateHuman": "Mar 01, 2023",
     "excerpt": "Hello everyone! Finally, a report for the repeater fundraiser . I am happy to announce 2 great news. The first: we collected the full amount for the purchase of a Motorola repeater for the 47th brigade of the Armed Force...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1681248379415-PTJEDK7PA4MOU0K3IFT4/repeater-handling.jpg"
+    "cover": "/assets/images/posts/repeater-handling.jpg"
   },
   {
     "slug": "fundraiser-repeater-ua",
@@ -221,7 +221,7 @@
     "dateISO": "2023-01-20",
     "dateHuman": "Jan 20, 2023",
     "excerpt": "View Donations Оновлення: Збір закрито! Всім дякую! Вітаю, друзі! Оголошую черговий збір - для вдосконалення комунікації наших козаків! ⚡ Від 47 бригади до мене надійшло прохання: знайти і придбати репітер Motorola 📻 Як...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1674328099431-6UVX9M7LA9OY794YZW1T/fundraiser-repeater.png"
+    "cover": "/assets/images/posts/fundraiser-repeater.png"
   },
   {
     "slug": "fundraiser-motorola-repeater",
@@ -229,7 +229,7 @@
     "dateISO": "2023-01-20",
     "dateHuman": "Jan 20, 2023",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! Hello, friends! I am announcing another fundraiser - to improve the communication of our warriors! ⚡ I received a request from the 47th brigade: to find and buy...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1674500029407-HYGUSSVAPEBI3V3S81WN/fundraiser-repeater-round.png"
+    "cover": "/assets/images/posts/fundraiser-repeater-round.png"
   },
   {
     "slug": "report-for-additional-help-for-ukrainian-soldiers",
@@ -237,7 +237,7 @@
     "dateISO": "2023-01-19",
     "dateHuman": "Jan 19, 2023",
     "excerpt": "This is a small report on additional purchases to help Ukrainian soldiers 📝 1️⃣ For the unit of 72nd brigade the following was purchased: 🧥 winter uniform (warms the boys for 3 weeks already); 🛞 winter tires for the pick...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1674504351140-CHEONEZOWP0FC8EQ913D/uniform.jpg"
+    "cover": "/assets/images/posts/uniform.jpg"
   },
   {
     "slug": "rifle-scope-and-starlink-fundraiser-report",
@@ -245,7 +245,7 @@
     "dateISO": "2023-01-10",
     "dateHuman": "Jan 10, 2023",
     "excerpt": "Thank you all for taking part in fundraiser for sniper rifle scope and Starlink device for Ukrainian soldiers. It took some time to find the scope with a good price. I first wanted to get it in the same store where I bou...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1674502523629-8R8SIQH4EQBL08ZAY3LA/scope.jpg"
+    "cover": "/assets/images/posts/scope.jpg"
   },
   {
     "slug": "fundraiser-scope-starlink-ua",
@@ -253,7 +253,7 @@
     "dateISO": "2022-12-01",
     "dateHuman": "Dec 01, 2022",
     "excerpt": "View Donations Оновлення 2: Збір закрито! Всім дякую! Оновлення: змінив суму збору, адже вдалось домовитись за гарну ціну на приціл 😉 Вітаю! Саме час оголосити новий, і як завжди - дуже важливий збір на 2 речі: Приціл (т...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1668064126968-1DE0N7BOW8GLCRZUV85G/startlink-fundraiser.png"
+    "cover": "/assets/images/posts/startlink-fundraiser.png"
   },
   {
     "slug": "pickup-truck-fundraiser-report",
@@ -261,7 +261,7 @@
     "dateISO": "2022-12-01",
     "dateHuman": "Dec 01, 2022",
     "excerpt": "The fundraiser for pickup truck is over, soldiers have received the car and I can make this report! First of all, thank you all for your help! You’re all great and all your donations were super invaluable! This car was v...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1673123199725-M7N1N5BR55CEZ6ICVYVY/with-car.jpg"
+    "cover": "/assets/images/posts/with-car.jpg"
   },
   {
     "slug": "fundraiser-car-ua",
@@ -269,7 +269,7 @@
     "dateISO": "2022-11-04",
     "dateHuman": "Nov 04, 2022",
     "excerpt": "View Donations ( English version ) Оновлення: Збір закрито! Всім дякую! Друзі, терміновий позачерговий збір для героїв ЗСУ! З часів Козацької України кращим другом козака був його кінь. Він завжи був поряд: і в бою, і в...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1667574320123-Y0CB3RCDO2YD0S0JZV1C/car-fundraiser.jpg"
+    "cover": "/assets/images/posts/car-fundraiser.jpg"
   },
   {
     "slug": "fundraiser-car",
@@ -277,7 +277,7 @@
     "dateISO": "2022-11-04",
     "dateHuman": "Nov 04, 2022",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! Dear friends! I have an urgent emergency fundraiser for the heroes of the Ukrainian Armed Forces! Since the times of Cossack Ukraine, a Cossack's best friend wa...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1667576836240-P7WEH134PPVQVOTV4ASA/car-fundraiser.jpg"
+    "cover": "/assets/images/posts/car-fundraiser.jpg"
   },
   {
     "slug": "night-vision-and-scope-fundraiser-report",
@@ -285,7 +285,7 @@
     "dateISO": "2022-11-01",
     "dateHuman": "Nov 01, 2022",
     "excerpt": "Finally, the devices were handled over to soldiers and I can happily make this report for the fundraiser for night vision device and sniper rifle scope . Thank you everyone who participated in this fundraiser. 🤗 You’re a...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1672421585833-4YUYC5A1IAP0KWJWA5ID/with-razor-47.jpg"
+    "cover": "/assets/images/posts/with-razor-47.jpg"
   },
   {
     "slug": "another-thermal-scope-fundraiser-report",
@@ -293,7 +293,7 @@
     "dateISO": "2022-10-30",
     "dateHuman": "Oct 30, 2022",
     "excerpt": "Thank you everyone for your help in raising funds to buy another thermal rifle scope for a soldier of the 48th assault battalion of the 72 brigade of Ukrainian Armed Forces! Together with the scope I was able to buy the...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1671919000153-SN9WSR2MZE05CH5GX07U/with-scope-thermal.jpg"
+    "cover": "/assets/images/posts/with-scope-thermal.jpg"
   },
   {
     "slug": "2022-9-18-fundraiser-thermal-rifle-scope-2-ua",
@@ -301,7 +301,7 @@
     "dateISO": "2022-09-18",
     "dateHuman": "Sep 18, 2022",
     "excerpt": "View Donations Оновлення: збір закрито! Всім дякую! Друзі, вітаю! Отримав запит від військових на ще один тепловізіний снайперський приціл. Цього разу це більш потужний прилад, який “бачить” ціль аж на 3 км! Модель прила...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1663506788827-I65YTOTEOHSD2EO314R1/thermal-scope-fundraiser-sq.png"
+    "cover": "/assets/images/posts/thermal-scope-fundraiser-sq.png"
   },
   {
     "slug": "fundraiser-night-vision-and-rifle-scope",
@@ -309,7 +309,7 @@
     "dateISO": "2022-09-08",
     "dateHuman": "Sep 08, 2022",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! Dear, friends! I announce a mega-fundraiser for Armed Forces of Ukraine fighters of TWO units at once! Since the beginning of the active phase of war, I’ve rais...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1662663057466-VMAN9E86NR13MVESRIAD/nv-scope-fundraiser.jpg"
+    "cover": "/assets/images/posts/nv-scope-fundraiser.jpg"
   },
   {
     "slug": "fundraiser-night-vision-and-rifle-scope-ua",
@@ -317,7 +317,7 @@
     "dateISO": "2022-09-08",
     "dateHuman": "Sep 08, 2022",
     "excerpt": "View Donations ( English version ) Оновлення: збір закрито! Всім дякую! Вітаю, друзі! Оголошую Мега-збір для бійців одразу ДВОХ підрозділів ВСУ! Та спочатку доповідаю: наш збір на тепловізійний приціл успішно завершений,...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1662660419180-TXTBKY8PVN522DEKY4YW/nv-scope-fundraiser.jpg"
+    "cover": "/assets/images/posts/nv-scope-fundraiser.jpg"
   },
   {
     "slug": "thermal-rifle-scope-fundraiser-report",
@@ -325,7 +325,7 @@
     "dateISO": "2022-09-08",
     "dateHuman": "Sep 08, 2022",
     "excerpt": "Thank you everyone! The fundraiser for thermal rifle scope was successful! We’ve managed to gather the required amount quickly and I’ve ordered the scope. I must say that I was able to negotiate a very good discount for...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1663504278754-R7EV1EYCGMG24JVN4ZZE/scope-and-stuff.jpg"
+    "cover": "/assets/images/posts/scope-and-stuff.jpg"
   },
   {
     "slug": "2022-8-25-fundraiser-thermal-rifle-scope",
@@ -333,7 +333,7 @@
     "dateISO": "2022-08-25",
     "dateHuman": "Aug 25, 2022",
     "excerpt": "View Donations The Ukrainian Army scout soldiers that I’ve had an honor to meet on our Independence Day asked me for help in getting some more equipment in addition to the thermal monocular that I’ve handed over to them...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1661461358621-P62VN5HQ49M0THGP9E21/thermal-scope-fundraiser-sq.png"
+    "cover": "/assets/images/posts/thermal-scope-fundraiser-sq.png"
   },
   {
     "slug": "thermal-monocular-fundraiser-report",
@@ -341,7 +341,7 @@
     "dateISO": "2022-08-24",
     "dateHuman": "Aug 24, 2022",
     "excerpt": "Today, I congratulate every Ukrainian with the Independence Day! 🇺🇦 This day has always been special for me for several reasons, and this year, as for most of us, it took on an additional meaning 💙💛 Today I had the great...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1661369996259-CBEJDWUIIUCIBXZAJS0G/with-teplik.jpg"
+    "cover": "/assets/images/posts/with-teplik.jpg"
   },
   {
     "slug": "2022-7-23-fundraiser-thermal-monocular",
@@ -349,7 +349,7 @@
     "dateISO": "2022-07-23",
     "dateHuman": "Jul 23, 2022",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! Hello all! First of all, I want to thank everyone who joined the walkie-talkie fundraiser ! I managed to make the payment before the exchange rate increased 😉 T...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1658574901800-QOTDNLSYKDEPM03IDHZ5/teplik-fundraiser.jpg"
+    "cover": "/assets/images/posts/teplik-fundraiser.jpg"
   },
   {
     "slug": "fundraiser-thermal-monocular-ua",
@@ -357,7 +357,7 @@
     "dateISO": "2022-07-23",
     "dateHuman": "Jul 23, 2022",
     "excerpt": "View Donations Оновлення: збір закрито! Всім дякую! Друзі, вітаю та знову звертаюсь по допомогу! 🙏 По-перше, хочу подякувати всім, хто долучився до збору коштів на рації ! Мені вдалось зробити оплату до підвищення курсу...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1658573189878-BNMME03ZHUPZI8BA2QI0/teplik-fundraiser.jpg"
+    "cover": "/assets/images/posts/teplik-fundraiser.jpg"
   },
   {
     "slug": "2022-7-23-additional-walkie-talkies-fundraiser-report",
@@ -365,7 +365,7 @@
     "dateISO": "2022-07-23",
     "dateHuman": "Jul 23, 2022",
     "excerpt": "Hello everyone and thank you! 🤗 I want to thank everyone who participated in the fundraiser for additional walkie-talkies ! I managed to order 32 walkie-talkies with additional batteries from the manufacturer. The walkie...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1658729839231-7WAZDKC0BYHLRCW0UBLX/295695092_10227511536155785_5861988459789848325_n.jpg"
+    "cover": "/assets/images/posts/295695092_10227511536155785_5861988459789848325_n.jpg"
   },
   {
     "slug": "2022-7-4-fundraiser-for-walkie-talkies-2",
@@ -373,7 +373,7 @@
     "dateISO": "2022-07-04",
     "dateHuman": "Jul 04, 2022",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! Dear friends! The guys who are currently defending Ukraine and its freedom in the east near Bakhmut have given very favorable reviews about the Retevis walkie-t...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1656935698642-1YOUOW9NUCJ81TWWZ18A/radios-fundraiser.png"
+    "cover": "/assets/images/posts/radios-fundraiser.png"
   },
   {
     "slug": "2022-7-4-fundraiser-for-walkie-talkies-ua-2",
@@ -381,7 +381,7 @@
     "dateISO": "2022-07-04",
     "dateHuman": "Jul 04, 2022",
     "excerpt": "View Donations ( English version ) Оновлення: збір закрито! Всім дякую! Друзі, вітаю! Хлопці, які зараз боронять нас на сході під Бахмутом, передали дуже схвальні відгуки про рації Retevis, що ми купили останнього разу ....",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1656932265946-DQABBGFGLXK1L40UMS4Z/radios-fundraiser.png"
+    "cover": "/assets/images/posts/radios-fundraiser.png"
   },
   {
     "slug": "2022-7-4-equipment-fundraiser-report",
@@ -389,7 +389,7 @@
     "dateISO": "2022-07-04",
     "dateHuman": "Jul 04, 2022",
     "excerpt": "Fundraising for additional equipment for previously purchased walkie-talkies was successful, so I can report back! Thank you so much to everyone who participated! 🤗 I managed to order additional batteries, antennas, char...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1657370681806-PM6PF3COZ17LGGYV2N9C/equip-in-netherlands.jpg"
+    "cover": "/assets/images/posts/equip-in-netherlands.jpg"
   },
   {
     "slug": "2022-6-19-fundraiser-for-equipment-for-ukrainian-soldiers",
@@ -397,7 +397,7 @@
     "dateISO": "2022-06-19",
     "dateHuman": "Jun 19, 2022",
     "excerpt": "Update 2: Fundraiser is closed! Thank you all! Updated 2022-06-23 with fund goal This is the fundraiser to buy equipment for Ukrainian soldiers that fight on the front line with russian fascists! Unfortunately, this terr...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1655936233471-FAP2JVSN33J3IJVZ4LBT/eq-fundraiser.png"
+    "cover": "/assets/images/posts/eq-fundraiser.png"
   },
   {
     "slug": "2022-6-16-walkie-talkie-fundraiser-report",
@@ -405,7 +405,7 @@
     "dateISO": "2022-06-15",
     "dateHuman": "Jun 15, 2022",
     "excerpt": "Finally, the walkies-talkies were delivered to our soldiers and I can make this report. Thank you very much to everyone who joined the fundraiser! 🤗 📻 I have bought 14 radios Retevis RT81 and one programming cable for th...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1655401911707-BYH99LRQJ80UBWD4WXY0/with-radios2.jpg"
+    "cover": "/assets/images/posts/with-radios2.jpg"
   },
   {
     "slug": "2022-5-31-fundraiser-for-walkie-talkies-1",
@@ -413,7 +413,7 @@
     "dateISO": "2022-05-31",
     "dateHuman": "May 31, 2022",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! After a successful fundraiser for a drone I appeal to you again to help raise funds to provide one Ukrainian military unit with additional equipment. These are...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1654012943433-E6GUQF1QEUHY30E8UHAC/radios-fundraiser.png"
+    "cover": "/assets/images/posts/radios-fundraiser.png"
   },
   {
     "slug": "2022-5-31-fundraiser-for-walkie-talkies-ua-1",
@@ -421,7 +421,7 @@
     "dateISO": "2022-05-30",
     "dateHuman": "May 30, 2022",
     "excerpt": "View Donations ( English version ) Оновлення: збір закрито! Всім дякую! Після успішного збору коштів на безпілотник я знову звертаюся до вас з проханням допомогти зібрати кошти для забезпечення одного підрозділу українсь...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1654014771613-33UVUBHKEV3FT5YIFCBE/radios-fundraiser.png"
+    "cover": "/assets/images/posts/radios-fundraiser.png"
   },
   {
     "slug": "2022-5-30-drone-fundraiser-report",
@@ -429,7 +429,7 @@
     "dateISO": "2022-05-30",
     "dateHuman": "May 30, 2022",
     "excerpt": "I am finally happy to make this report about our fundraiser for the drone ! 📝 We managed to raise the required amount and even a little more. Thank you all very much! The drone was purchased and delivered to the guys ver...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1655399691986-CQLQ4MQJ0LHPVD1O1IQ9/with-drone.jpg"
+    "cover": "/assets/images/posts/with-drone.jpg"
   },
   {
     "slug": "2022-5-10-fundraiser-for-a-drone-for-ukrainian-soldiers-nmfb5",
@@ -437,7 +437,7 @@
     "dateISO": "2022-05-10",
     "dateHuman": "May 10, 2022",
     "excerpt": "View Donations ( English version ) Оновлення: збір закрито! Всім дякую! Дорогі друзі! Я продовжую збір коштів, щоб придбати спеціальний дрон з тепловізійною камерою для наших військових, які саме зараз захищають нас на п...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1652212807740-GBCS4RW5Z84GJHVL0W9R/drone-fundraiser.jpg"
+    "cover": "/assets/images/posts/drone-fundraiser.jpg"
   },
   {
     "slug": "2022-5-10-fundraiser-for-a-drone-for-ukrainian-soldiers",
@@ -445,7 +445,7 @@
     "dateISO": "2022-05-10",
     "dateHuman": "May 10, 2022",
     "excerpt": "View Donations Update: Fundraiser is closed! Thank you all! Dear friends! I continue the fundraiser to get the special drone with thermal imaging camera for our soldiers that are currently defending us on the front-line....",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1652212807740-GBCS4RW5Z84GJHVL0W9R/drone-fundraiser.jpg"
+    "cover": "/assets/images/posts/drone-fundraiser.jpg"
   },
   {
     "slug": "2022-5-10-fundraising-report-and-purchases",
@@ -453,7 +453,7 @@
     "dateISO": "2022-05-08",
     "dateHuman": "May 08, 2022",
     "excerpt": "As of May 8, we collected UAH 177,288 in various currencies, namely UAH 84899, $680 and €2326. All the funds raised so far have gone to the following expenses: 10 Hytera HP705 VHF walkie-talkies for €435 plus delivery fo...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1707592698089-0ZU7T5BMPUYS0LSO5HO0/drone-huge-fundraiser.png"
+    "cover": "/assets/images/posts/drone-huge-fundraiser.png"
   },
   {
     "slug": "2022-5-6-preliminary-report-and-few-words-about-drones-jdhz2",
@@ -461,7 +461,7 @@
     "dateISO": "2022-05-06",
     "dateHuman": "May 06, 2022",
     "excerpt": "Friends, you are awesome! Thanks to all of you, we’ve managed to raise almost 4K euro in a week! I’ve added my own funds and bought 10 walkie-talkies, which are already going to Poland, and also I’ve made a pre-payment a...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1651833042070-WVMTILA3DGYSEEAB8263/pic-drone-1.jpg"
+    "cover": "/assets/images/posts/pic-drone-1.jpg"
   },
   {
     "slug": "2022-5-5-few-words-about-drones-and-their-batteries",
@@ -469,7 +469,7 @@
     "dateISO": "2022-05-02",
     "dateHuman": "May 02, 2022",
     "excerpt": "I think many of you have seen videos of the successful use of various drones by our heroic warriors! They use them to conduct reconnaissance, correct fire, detect clusters of enemies, drop shells, and do many other inter...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1651710358501-SFORBQT85PADD3H8XOF7/pic-bat-1.png"
+    "cover": "/assets/images/posts/pic-bat-1.png"
   },
   {
     "slug": "2022-5-5-few-words-about-walkie-talkies",
@@ -477,7 +477,7 @@
     "dateISO": "2022-04-30",
     "dateHuman": "Apr 30, 2022",
     "excerpt": "The military needs a reliable connection - I think that's understandable. Imagine you go on a mission, launch drones, track the movement of the enemy - you need to be able to transmit information quickly, often over long...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1651709953125-SEIV0WMBNKKHUNJVZ6QG/pic-radio-1.png"
+    "cover": "/assets/images/posts/pic-radio-1.png"
   },
   {
     "slug": "2022-4-27-second-fundraise-to-help-ukrainian-soldiers",
@@ -485,7 +485,7 @@
     "dateISO": "2022-04-26",
     "dateHuman": "Apr 26, 2022",
     "excerpt": "Update: Fundraiser is closed! Thank you all! Dear Friends! I received feedback from the military guys on the front line about the equipment we've bought together a month ago with your financial help. Guys thank you very...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/1cbfaa96-de72-4caa-ad93-2cb29d6b21fc/new-stuff-2.jpeg"
+    "cover": "/assets/images/posts/new-stuff-2.jpeg"
   },
   {
     "slug": "2022-4-10-report-on-first-fund-raise",
@@ -493,7 +493,7 @@
     "dateISO": "2022-04-09",
     "dateHuman": "Apr 09, 2022",
     "excerpt": "Thank you everyone for your donations! I was able to get thermal monocular, secure radios and accumulators for drones! It was not an easy scavenger hunt, but with the help of friends from different countries we've manage...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/56f6c1b3-620b-4dce-9a96-8bb4356a8cbb/report-first.jpg"
+    "cover": "/assets/images/posts/report-first.jpg"
   },
   {
     "slug": "2022-03-27-fund-raise-to-help-ukrainian-soldiers",
@@ -501,6 +501,6 @@
     "dateISO": "2016-03-27",
     "dateHuman": "Mar 27, 2016",
     "excerpt": "Update: Fundraiser is closed! Thank you all! Hello all. The guys who are now defending Ukraine in the eastern direction are asking for help. I decided to help volunteers who are already busy as hell. I am raising funds f...",
-    "cover": "https://images.squarespace-cdn.com/content/v1/55c36c6fe4b0e4120b157100/74cc8029-c17e-455e-a08b-8c3e3607ef4e/first-fund-raise.jpeg"
+    "cover": "/assets/images/posts/first-fund-raise.jpeg"
   }
 ]
