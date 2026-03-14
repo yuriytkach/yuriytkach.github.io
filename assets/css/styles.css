@@ -413,10 +413,10 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
 
 /* About / bio section */
 .about-section { padding: 3rem 0 2rem; }
-.about-heading { font-family: 'Space Grotesk', monospace; font-size: 1.4rem; color: var(--accent); margin-bottom: 1rem; }
+.about-heading { font-family: 'Fira Code', 'JetBrains Mono', monospace; font-size: 1.4rem; color: var(--accent); margin-bottom: 1rem; }
 .about-brace { opacity: 0.5; }
 .about-body { font-size: 1.05rem; line-height: 1.7; max-width: 720px; }
-.about-close { font-family: 'Space Grotesk', monospace; font-size: 1.4rem; color: var(--accent); opacity: 0.5; }
+.about-close { font-family: 'Fira Code', 'JetBrains Mono', monospace; font-size: 1.4rem; color: var(--accent); opacity: 0.5; }
 
 @media (prefers-reduced-motion: reduce) {
   .hero-banner::before,
