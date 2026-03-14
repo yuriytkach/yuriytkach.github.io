@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +14,7 @@
 <body>
   <header class="site-header">
   <div class="wrap nav-row">
-    <a class="brand" href="/">Yuriy Tkach</a>
+    <a class="brand logo-brand" href="/"><img src="/assets/images/logo-software-developer.png" alt="Yuriy Tkach" class="site-logo" /></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
     <nav id="main-nav" class="site-nav" aria-label="Main navigation">
       <a href="/">Home</a>
@@ -25,11 +26,13 @@
   </div>
 </header>
   <main>
-<section class="hero wrap">
-  <p class="kicker">Volunteering initiative</p>
-  <h1>Direct Help for Ukraine</h1>
-  <p class="lead">Reports and fundraisers supporting Ukrainian Armed Forces. Posts are listed below and each opens as a standalone page.</p>
-</section>
+<div class="hero-banner">
+  <div class="hero-banner-content wrap">
+    <p class="hero-kicker">Volunteering initiative</p>
+    <h1 class="hero-title">Direct Help for Ukraine</h1>
+    <p class="hero-subtitle">Reports and fundraisers supporting Ukrainian Armed Forces.</p>
+  </div>
+</div>
 <section class="section wrap">
   <div id="posts" class="post-grid" aria-live="polite"></div>
 </section>

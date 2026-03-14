@@ -85,6 +85,51 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
 .footer-links a, .site-footer a { color: var(--ink); }
 .copyright { text-align: center; margin: 1rem 0 0; color: var(--muted); font-size: .88rem; }
 .embed-wrap { border-radius: 16px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow); background: #fff; }
+/* Logo in header */
+.site-logo { height: 44px; width: auto; display: block; filter: invert(0.88) sepia(0.2) saturate(0.5) hue-rotate(160deg) brightness(0.4); }
+.logo-brand { display: flex; align-items: center; }
+/* Hero banner photo */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 320px;
+  background: url('/assets/images/hero-banner.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: flex-end;
+}
+.hero-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.15) 0%, rgba(0,0,0,0.55) 100%);
+}
+.hero-banner .hero-banner-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  padding: 2rem;
+  width: 100%;
+}
+.hero-banner .hero-banner-content h1,
+.hero-banner .hero-banner-content p { color: #fff; margin: 0; }
+.hero-banner .hero-banner-content .hero-kicker {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.85;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+.hero-banner .hero-banner-content .hero-title {
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+.hero-banner .hero-banner-content .hero-subtitle {
+  opacity: 0.85;
+  margin-top: 0.4rem;
+  font-size: 1rem;
+}
 @media (max-width: 900px) {
   .cards-2 { grid-template-columns: 1fr; }
 }

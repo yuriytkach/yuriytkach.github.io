@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +14,7 @@
 <body>
   <header class="site-header">
   <div class="wrap nav-row">
-    <a class="brand" href="/">Yuriy Tkach</a>
+    <a class="brand logo-brand" href="/"><img src="/assets/images/logo-software-developer.png" alt="Yuriy Tkach" class="site-logo" /></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
     <nav id="main-nav" class="site-nav" aria-label="Main navigation">
       <a href="/">Home</a>
@@ -25,14 +26,18 @@
   </div>
 </header>
   <main>
-<section class="hero wrap">
-  <p class="kicker">Calendar</p>
-  <h1>Public availability</h1>
-  <p class="lead">Free and busy information for daytime slots. If a time works for you, reach out on the contact page.</p>
+<div class="hero-banner">
+  <div class="hero-banner-content wrap">
+    <p class="hero-kicker">Calendar</p>
+    <h1 class="hero-title">Public availability</h1>
+  </div>
+</div>
+<section class="section wrap" style="padding-top:1rem; padding-bottom:0.5rem;">
+  <p class="lead">I can be busy, I can be free, and even when I am free I might still be busy :) In any case, below you can see my public calendar, so if you want to chat just pick a time and contact me.</p>
 </section>
 <section class="section wrap">
   <div class="embed-wrap">
-    <iframe src="https://calendar.google.com/calendar/embed?src=yuriytkach%40gmail.com&ctz=Europe%2FKyiv" style="border:0" width="100%" height="700" frameborder="0" scrolling="no" title="Public calendar"></iframe>
+    <iframe src="https://calendar.google.com/calendar/embed?src=yuriytkach%40gmail.com&ctz=Europe%2FKyiv&wkst=2&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&showTz=0" style="border:0" width="100%" height="700" frameborder="0" scrolling="no" title="Public calendar"></iframe>
   </div>
 </section>
 </main>
