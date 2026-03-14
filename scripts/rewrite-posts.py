@@ -52,8 +52,50 @@ def fix_volunteer_links(html):
     return re.sub(r'href="(/volunteer/[^/"#][^"]*)"', replace_link, html)
 
 
+def strip_summary_blocks(html):
+    """Remove Squarespace summary/collection blocks that embed other posts' content."""
+    # Remove entire blocks with these classes
+    for cls in [
+        "sqs-block-summary-v2",
+        "summary-block-wrapper",
+        "sqs-block-collection",
+    ]:
+        # Find and remove div blocks containing these classes
+        pattern = f'<div[^>]*class="[^"]*{cls}[^"]*"'
+        pos = 0
+        while True:
+            m = re.search(pattern, html[pos:])
+            if not m:
+                break
+            start = pos + m.start()
+            # Find matching closing </div>
+            tag_end = html.find(">", start)
+            if tag_end == -1:
+                break
+            depth = 1
+            search = tag_end + 1
+            while depth > 0 and search < len(html):
+                o = html.find("<div", search)
+                c = html.find("</div>", search)
+                if c == -1:
+                    break
+                if o != -1 and o < c:
+                    depth += 1
+                    search = o + 4
+                else:
+                    depth -= 1
+                    if depth == 0:
+                        html = html[:start] + html[c + 6 :]
+                        pos = start
+                    search = c + 6
+            else:
+                pos = tag_end + 1
+    return html
+
+
 def extract_sqs_content(html):
     """Extract text blocks and images from Squarespace HTML."""
+    html = strip_summary_blocks(html)
     # Extract ALL sqs-html-content div contents (using a simple iterative parser)
     text_blocks = []
     pos = 0
