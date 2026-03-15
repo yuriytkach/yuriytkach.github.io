@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Literata:opsz,wght@7..72,500;7..72,700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/styles.css" />
 <script defer src="/assets/js/main.js"></script>
-  <title>Volunteering - Yuriy Tkach</title>
+  <title>Coding Stats - Yuriy Tkach</title>
 </head>
 <body>
   <header class="site-header">
@@ -19,22 +19,51 @@
     <nav id="main-nav" class="site-nav" aria-label="Main navigation">
       <a href="/">Home</a>
       <a href="/resume/">Experience</a>
-      <a href="/stats/">Stats</a>
-      <a href="/volunteer/" aria-current="page">Volunteering</a>
+      <a href="/stats/" aria-current="page">Stats</a>
+      <a href="/volunteer/">Volunteering</a>
       <a href="/contact/">Contact</a>
     </nav>
   </div>
 </header>
   <main>
-<div class="hero-banner hero-banner--volunteer" data-parallax="hero">
+<div class="hero-banner hero-banner--stats" data-parallax="hero">
   <div class="hero-banner-content wrap">
-    <p class="hero-kicker">Volunteering initiative</p>
-    <h1 class="hero-title">Direct Help for Ukraine</h1>
-    <p class="hero-subtitle">Reports and fundraisers supporting Ukrainian Armed Forces.</p>
+    <p class="hero-kicker">Developer Activity</p>
+    <h1 class="hero-title">Coding Stats</h1>
+    <p class="hero-subtitle">What I code and when</p>
   </div>
 </div>
+
 <section class="section wrap">
-  <div id="posts" class="post-grid" aria-live="polite"></div>
+  <h2>GitHub Activity</h2>
+
+  <div class="stat-card card">
+    <p class="stat-label">Contribution graph for the past year across all repositories, including private and organization repos</p>
+    <img src="https://ghchart.rshah.org/1f6b5b/yuriytkach" alt="GitHub contribution graph" class="stat-img" />
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card card">
+      <p class="stat-label">Public repositories only</p>
+      <img src="https://github-readme-stats.vercel.app/api?username=yuriytkach&show_icons=true&theme=default&hide_border=true&bg_color=ffffff" alt="GitHub stats" class="stat-img" />
+    </div>
+    <div class="stat-card card">
+      <p class="stat-label">Public repositories only</p>
+      <img src="https://github-readme-stats.vercel.app/api/top-langs?username=yuriytkach&layout=compact&hide_border=true&bg_color=ffffff&hide=html,css" alt="Top languages" class="stat-img" />
+    </div>
+  </div>
+</section>
+
+<section class="section wrap">
+  <h2>Coding Activity</h2>
+
+  <div class="stat-card card">
+    <embed src="https://wakatime.com/share/@c9481947-6b81-4eda-99eb-170787cad4dd/f5a1453e-a387-46ac-a8ba-c287387f21ca.svg" class="stat-img" />
+  </div>
+
+  <div class="stat-card card">
+    <embed src="https://wakatime.com/share/@c9481947-6b81-4eda-99eb-170787cad4dd/8a3fbcf5-dbc9-48a8-a830-18b40c36a130.svg" class="stat-img" />
+  </div>
 </section>
 </main>
   <footer class="site-footer">
@@ -51,6 +80,6 @@
   </div>
   <p class="copyright">&copy; <span id="year"></span> Yuriy Tkach</p>
 </footer>
-  <script defer src="/assets/js/volunteer.js"></script>
+
 </body>
 </html>

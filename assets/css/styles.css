@@ -185,6 +185,11 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   --hero-position: center 15%;
   --hero-overlay: linear-gradient(180deg, rgba(34, 22, 15, 0.18) 0%, rgba(22, 22, 30, 0.72) 100%);
 }
+.hero-banner--stats {
+  --hero-image: url('/assets/images/hero-resume.jpg');
+  --hero-position: center 40%;
+  --hero-overlay: linear-gradient(180deg, rgba(10, 22, 34, 0.14) 0%, rgba(12, 28, 44, 0.74) 100%);
+}
 
 .lead--feature {
   margin: 0 auto;
@@ -449,6 +454,46 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
 .about-brace { opacity: 0.5; }
 .about-body { font-size: 1.05rem; line-height: 1.75; color: var(--muted); }
 .about-close { font-family: 'Fira Code', 'JetBrains Mono', monospace; font-size: 1.4rem; color: var(--accent); opacity: 0.5; }
+
+/* Stats page */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+.stat-card {
+  text-align: center;
+  padding: 1.4rem;
+}
+.stat-card + .stats-grid {
+  margin-top: 1.25rem;
+}
+.stat-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.stat-card embed.stat-img {
+  max-width: 560px;
+  max-height: 380px;
+  width: 100%;
+}
+.stat-label {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: 0 0 0.8rem;
+}
+.stat-placeholder {
+  color: var(--muted);
+  padding: 2rem 1rem;
+  text-align: center;
+  margin: 0;
+}
+@media (max-width: 900px) {
+  .stats-grid { grid-template-columns: 1fr; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .hero-banner::before,
