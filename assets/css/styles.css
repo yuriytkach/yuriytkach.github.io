@@ -334,7 +334,7 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   display: block;
   text-decoration: none;
   color: inherit;
-  min-height: 146px;
+  min-height: 0;
   border-radius: 20px;
   padding: 1.2rem;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
@@ -344,6 +344,17 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   transform: translateY(-3px);
   border-color: rgba(31, 107, 91, 0.28);
   box-shadow: 0 20px 36px rgba(18, 31, 44, 0.12);
+}
+.contact-link-icon {
+  display: block;
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: var(--muted);
+  transition: color 180ms ease;
+}
+.contact-link-card:hover .contact-link-icon,
+.contact-link-card:focus-visible .contact-link-icon {
+  color: var(--accent, #1f6b5b);
 }
 .contact-link-label {
   display: block;
@@ -362,6 +373,20 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   .cards-2 { grid-template-columns: 1fr; }
   .contact-grid,
   .contact-links-grid { grid-template-columns: 1fr; }
+  .contact-link-card {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    align-items: center;
+    min-height: auto;
+  }
+  .contact-link-icon {
+    grid-column: 2;
+    grid-row: 1 / -1;
+    margin-bottom: 0;
+    font-size: 2.2rem;
+    opacity: 0.3;
+  }
 }
 @media (max-width: 760px) {
   .menu-toggle { display: inline-flex; border: 1px solid var(--line); border-radius: 10px; background: #fff; padding: .45rem .7rem; }
