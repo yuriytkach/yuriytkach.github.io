@@ -162,8 +162,8 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
 }
 .hero-banner--volunteer {
   --hero-image: url('/assets/images/hero-volunteer.jpg');
-  --hero-position: center 48%;
-  --hero-overlay: linear-gradient(180deg, rgba(6, 47, 92, 0.16) 0%, rgba(6, 47, 92, 0.7) 48%, rgba(244, 181, 42, 0.52) 100%);
+  --hero-position: center 54%;
+  --hero-overlay: linear-gradient(180deg, rgba(6, 47, 92, 0.18) 0%, rgba(6, 47, 92, 0.35) 34%, rgba(244, 181, 42, 0.3) 56%, rgba(244, 181, 42, 0.42) 72%, rgba(30, 24, 12, 0.62) 100%);
 }
 .hero-banner.hero-banner--post {
   --hero-image: url('/assets/images/hero-volunteer.jpg');
