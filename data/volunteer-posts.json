@@ -16,14 +16,6 @@
     "cover": "/assets/images/posts/telemetro-fundraiser.png"
   },
   {
-    "slug": "fundraiser-uav",
-    "title": "Fundraiser for Reconnaissance Drone ✈️",
-    "dateISO": "2024-06-11",
-    "dateHuman": "Jun 11, 2024",
-    "excerpt": "Hello, friends! The guys from the 48th battalion of the 72nd brigade need a special reconnaissance UAV to better guide their FPV drones (including those that we’ve provided to them ). The UAV is special and not cheap. Th...",
-    "cover": "/assets/images/posts/drone-huge-fundraiser.png"
-  },
-  {
     "slug": "report-fundraiser-night-vision",
     "title": "Report for Night Vision Monocular Fundraiser 📝",
     "dateISO": "2024-06-10",
