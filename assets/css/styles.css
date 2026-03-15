@@ -165,10 +165,11 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   --hero-position: center 48%;
   --hero-overlay: linear-gradient(180deg, rgba(6, 47, 92, 0.16) 0%, rgba(6, 47, 92, 0.7) 48%, rgba(244, 181, 42, 0.52) 100%);
 }
-.hero-banner--post {
+.hero-banner.hero-banner--post {
   --hero-image: url('/assets/images/hero-volunteer.jpg');
-  --hero-position: center 32%;
-  --hero-overlay: linear-gradient(180deg, rgba(7, 23, 42, 0.28) 0%, rgba(8, 34, 62, 0.78) 52%, rgba(14, 25, 37, 0.9) 100%);
+  --hero-position: center top;
+  --hero-overlay: linear-gradient(180deg, rgba(6, 30, 58, 0.12) 0%, rgba(6, 30, 58, 0.55) 100%);
+  min-height: clamp(220px, 32vw, 340px);
 }
 .hero-banner--404 {
   --hero-image: url('/assets/images/hero-volunteer.jpg');
@@ -369,6 +370,13 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   .hero-banner {
     min-height: 400px;
   }
+  .hero-banner.hero-banner--post {
+    min-height: auto;
+  }
+  .hero-banner.hero-banner--post::before {
+    background-size: 180% auto;
+    background-position: center top;
+  }
   .hero-banner::before {
     transform: scale(1.03);
   }
@@ -441,7 +449,9 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   height: 200px;
   object-fit: cover;
   display: block;
+  cursor: zoom-in;
 }
+.post-gallery-item:hover { box-shadow: 0 20px 36px rgba(18, 31, 44, 0.14); }
 .post-gallery-item figcaption {
   padding: 0.4rem 0.6rem;
   font-size: 0.82rem;
@@ -521,7 +531,8 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   padding: 1.5rem;
   overflow: auto;
 }
-.lightbox-content embed {
+.lightbox-content embed,
+.lightbox-content img {
   width: 100%;
   height: auto;
   display: block;

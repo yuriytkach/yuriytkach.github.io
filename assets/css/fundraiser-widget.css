@@ -1,0 +1,66 @@
+.fundraiser-widget {
+  float: right;
+  margin: 0 0 1.5rem 1.5rem;
+  font-family: sans-serif;
+}
+.fundraiser-widget .fw-container {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fundraiser-widget .fw-chart {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fundraiser-widget .fw-data {
+  position: absolute;
+  color: #4a4a4a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fundraiser-widget .fw-percent {
+  font-size: 30px;
+}
+.fundraiser-widget .fw-raised {
+  margin-top: 3px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.fundraiser-widget .fw-goal {
+  margin: 0.5rem 0;
+}
+.fundraiser-widget .fw-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #38ad24;
+  cursor: pointer;
+  transition: 200ms;
+}
+.fundraiser-widget .fw-btn:hover {
+  background-color: #2a851b;
+  transition: 200ms;
+}
+.fundraiser-widget .fw-btn span {
+  font-size: 17px;
+  color: white;
+}
+.fw-btn-ok {
+  background-color: #38ad24;
+}
+.swal-content table {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .fundraiser-widget {
+    float: none;
+    margin: 1.5rem auto;
+    text-align: center;
+  }
+}

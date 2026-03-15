@@ -82,36 +82,5 @@
   </div>
   <p class="copyright">&copy; <span id="year"></span> Yuriy Tkach</p>
 </footer>
-
-<div class="lightbox-overlay" id="lightbox">
-  <button class="lightbox-close" aria-label="Close">&times;</button>
-  <div class="lightbox-content">
-    <embed id="lightbox-embed" src="" />
-  </div>
-</div>
-<script>
-(function() {
-  var overlay = document.getElementById('lightbox');
-  var embed = document.getElementById('lightbox-embed');
-  document.querySelectorAll('[data-lightbox]').forEach(function(el) {
-    el.addEventListener('click', function() {
-      embed.src = el.getAttribute('data-lightbox');
-      overlay.classList.add('active');
-      document.body.style.overflow = 'hidden';
-    });
-  });
-  function closeLightbox() {
-    overlay.classList.remove('active');
-    document.body.style.overflow = '';
-    embed.src = '';
-  }
-  overlay.addEventListener('click', function(e) {
-    if (e.target === overlay || e.target.classList.contains('lightbox-close')) closeLightbox();
-  });
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeLightbox();
-  });
-})();
-</script>
 </body>
 </html>

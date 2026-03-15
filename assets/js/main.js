@@ -58,3 +58,58 @@ if (heroParallaxItems.length) {
   }
   requestHeroParallax();
 }
+
+/* Lightbox — supports [data-lightbox] (embed src) and .post-gallery-item img */
+(function () {
+  var triggers = document.querySelectorAll('[data-lightbox]');
+  var galleryImgs = document.querySelectorAll('.post-gallery-item img');
+  if (!triggers.length && !galleryImgs.length) return;
+
+  // Create overlay DOM
+  var overlay = document.createElement('div');
+  overlay.className = 'lightbox-overlay';
+  overlay.id = 'lightbox';
+  overlay.innerHTML =
+    '<button class="lightbox-close" aria-label="Close">&times;</button>' +
+    '<div class="lightbox-content"></div>';
+  document.body.appendChild(overlay);
+
+  var content = overlay.querySelector('.lightbox-content');
+
+  function open(el) {
+    content.innerHTML = '';
+    var src = el.getAttribute('data-lightbox');
+    if (src) {
+      var embed = document.createElement('embed');
+      embed.src = src;
+      content.appendChild(embed);
+    } else if (el.tagName === 'IMG') {
+      var img = document.createElement('img');
+      img.src = el.src;
+      img.alt = el.alt || '';
+      content.appendChild(img);
+    }
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+    content.innerHTML = '';
+  }
+
+  triggers.forEach(function (el) {
+    el.addEventListener('click', function () { open(el); });
+  });
+  galleryImgs.forEach(function (img) {
+    img.addEventListener('click', function () { open(img); });
+  });
+
+  overlay.addEventListener('click', function (e) {
+    if (e.target === overlay || e.target.classList.contains('lightbox-close')) close();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
+  });
+})();

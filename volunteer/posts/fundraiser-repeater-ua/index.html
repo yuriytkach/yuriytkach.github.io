@@ -8,8 +8,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Literata:opsz,wght@7..72,500;7..72,700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/assets/css/styles.css" />
+  <link rel="stylesheet" href="/assets/css/fundraiser-widget.css" />
   <script defer src="/assets/js/main.js"></script>
   <title>💰 Збір коштів на репітер Motorola 📻 - Yuriy Tkach</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script defer src="/assets/js/fundraiser-widget.js"></script>
 </head>
 <body>
   <header class="site-header">
@@ -35,6 +41,7 @@
     </div>
     <article class="post-content">
       <p><a class="btn alt" href="/volunteer/">&larr; Back to all posts</a></p>
+      <div class="fundraiser-widget" data-fund-id="rep"></div>
       <p class="" style="white-space:pre-wrap;"><em>Оновлення: Збір закрито! Всім дякую!</em></p><p class="" style="white-space:pre-wrap;">Вітаю, друзі! Оголошую черговий збір - для вдосконалення комунікації наших козаків! ⚡</p><p class="" style="white-space:pre-wrap;">Від 47 бригади до мене надійшло прохання: знайти і придбати репітер Motorola 📻 Як ви розумієте, про необхідність пошуку не випадково було наголошено окремо - бо то як ховрах (він же суслик): всі знають, що він десь є, але спробуй його побач у продажу…</p><p class="" style="white-space:pre-wrap;">Стисло про функцію репітера: цей радіоелектронний пристрій встановлюється на проміжному пункті лінії радіозв'язку, щоб підсилювати сигнали рацій, які на нього надходять, і передавати їх далі. Це дозволяє значно, на десятки кілометрів, розширювати їхню зону покриття! 📡</p><p class="" style="white-space:pre-wrap;">У репітерів загалом багато додаткових функцій-бонусів… Але головне - хоча б один такий прилад здатний забезпечити якісний зв’язок незалежно від рельєфу і погоди, на величезні відстані. 🗺️</p><p class="" style="white-space:pre-wrap;">Це життєво важливо! Особливо зараз, коли ми маємо осатанілих орків, що намагаються вчиняти прориви одночасно у віддалених одна від одної місцевостях. 👹</p><p class="" style="white-space:pre-wrap;">Та порвуть вони хіба свої дупи - в процесі неконтрольованої дефекації зі страху при зустрічі з нашими Воїнами! І відтак я запрошую вас долучитися до забезпечення такого їхнього фіналу! 🪦</p><p class="" style="white-space:pre-wrap;">Мушу визнати, що я доволі довго шукав репітер Motorola по адекватній ціні 🔎, тим більше враховуючи те, що вони взагалі не часто є в продажу. Але нарешті - успіх! - техніка є в наявності, хлопці схвалили модель, ціна найкраща - 3000 євро! ⚡</p><p class="" style="white-space:pre-wrap;">Тепер справа у наших руках, і ми з бригадою 47 просимо вашої допомоги у вигляді прийнятних для вас сум донатів. Кожна копійчина - це надійність зв'язку ЗСУ і відповідно їхня мегапотужність на полі бою! Це життя і безпека захисників! Це - наша швидша Перемога!!!</p><p class="" style="white-space:pre-wrap;">Завчасно всім уклінно дякую! ↗️ Поділіться цим дописом, щоб інші люди теж могли долучитись!</p><p class="" style="white-space:pre-wrap;">Слава нашій нескореній Нації! 🇺🇦 Слава ЗСУ! 🪖</p>
       <div class="post-gallery">
     <figure class="post-gallery-item"><img src="/assets/images/posts/fundraiser-repeater.png" alt="fundraiser-repeater.png" loading="lazy" onerror="this.parentElement.style.display='none'"></figure>
