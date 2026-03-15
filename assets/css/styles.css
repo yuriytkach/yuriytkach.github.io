@@ -102,7 +102,7 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
   overflow: clip;
   --hero-image: url('/assets/images/hero-banner.jpg');
   --hero-position: center 46%;
-  --hero-overlay: linear-gradient(180deg, rgba(10, 18, 28, 0.12) 0%, rgba(10, 18, 28, 0.68) 100%);
+  --hero-overlay: linear-gradient(180deg, transparent 30%, rgba(10, 18, 28, 0.68) 100%);
   --hero-shift: 0px;
 }
 .hero-banner::before {
@@ -158,7 +158,7 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
 .hero-banner--resume {
   --hero-image: url('/assets/images/hero-resume.jpg');
   --hero-position: center 44%;
-  --hero-overlay: linear-gradient(180deg, rgba(13, 20, 28, 0.16) 0%, rgba(12, 22, 34, 0.72) 100%);
+  --hero-overlay: linear-gradient(180deg, transparent 30%, rgba(12, 22, 34, 0.72) 100%);
 }
 .hero-banner--volunteer {
   --hero-image: url('/assets/images/hero-volunteer.jpg');
@@ -168,28 +168,28 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
 .hero-banner.hero-banner--post {
   --hero-image: url('/assets/images/hero-volunteer.jpg');
   --hero-position: center top;
-  --hero-overlay: linear-gradient(180deg, rgba(6, 30, 58, 0.12) 0%, rgba(6, 30, 58, 0.55) 100%);
+  --hero-overlay: linear-gradient(180deg, transparent 30%, rgba(6, 30, 58, 0.55) 100%);
   min-height: clamp(220px, 32vw, 340px);
 }
 .hero-banner--404 {
   --hero-image: url('/assets/images/hero-volunteer.jpg');
   --hero-position: center 24%;
-  --hero-overlay: linear-gradient(180deg, rgba(12, 22, 34, 0.32) 0%, rgba(14, 30, 44, 0.78) 58%, rgba(17, 23, 31, 0.9) 100%);
+  --hero-overlay: linear-gradient(180deg, transparent 30%, rgba(14, 30, 44, 0.78) 65%, rgba(17, 23, 31, 0.9) 100%);
 }
 .hero-banner--calendar {
   --hero-image: url('/assets/images/hero-calendar.jpg');
   --hero-position: center 38%;
-  --hero-overlay: linear-gradient(180deg, rgba(16, 30, 43, 0.08) 0%, rgba(16, 30, 43, 0.7) 100%);
+  --hero-overlay: linear-gradient(180deg, transparent 30%, rgba(16, 30, 43, 0.7) 100%);
 }
 .hero-banner--contact {
   --hero-image: url('/assets/images/hero-contact.jpg');
   --hero-position: center 15%;
-  --hero-overlay: linear-gradient(180deg, rgba(34, 22, 15, 0.18) 0%, rgba(22, 22, 30, 0.72) 100%);
+  --hero-overlay: linear-gradient(180deg, transparent 30%, rgba(22, 22, 30, 0.72) 100%);
 }
 .hero-banner--stats {
   --hero-image: url('/assets/images/hero-stats.jpg');
   --hero-position: center 40%;
-  --hero-overlay: linear-gradient(180deg, rgba(10, 22, 34, 0.14) 0%, rgba(12, 28, 44, 0.74) 100%);
+  --hero-overlay: linear-gradient(180deg, transparent 30%, rgba(12, 28, 44, 0.74) 100%);
 }
 
 .lead--feature {
