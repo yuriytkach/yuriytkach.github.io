@@ -465,6 +465,7 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
 .stat-card {
   text-align: center;
   padding: 1.4rem;
+  overflow-x: auto;
 }
 .stat-card + .stats-grid {
   margin-top: 1.25rem;
@@ -493,6 +494,15 @@ h2 { font-size: clamp(1.4rem, 3.2vw, 2rem); }
 }
 @media (max-width: 900px) {
   .stats-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .stat-card { padding: 0.8rem; }
+  .stat-card img.stat-img { min-width: 540px; }
+  .stat-card embed.stat-img {
+    max-width: none;
+    max-height: none;
+    min-width: 340px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
