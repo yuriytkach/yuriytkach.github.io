@@ -1,17 +1,15 @@
+/* Fundraiser widget — themed through the site tokens */
 .fundraiser-widget {
   float: right;
-  margin: 0 0 1.5rem 1.5rem;
-  font-family: sans-serif;
+  margin: 0 0 var(--s5, 1.5rem) var(--s5, 1.5rem);
+  font-family: var(--font-mono, monospace);
+  border: 1px solid var(--rule, #d5dce3);
+  background: var(--panel, #fff);
+  padding: var(--s4, 1rem);
 }
-.fundraiser-widget .fw-container {
-  color: #000;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+.fundraiser-widget .fw-container,
 .fundraiser-widget .fw-chart {
-  color: #000;
+  color: var(--ink, #0e141b);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,48 +17,68 @@
 }
 .fundraiser-widget .fw-data {
   position: absolute;
-  color: #4a4a4a;
+  color: var(--ink, #0e141b);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .fundraiser-widget .fw-percent {
-  font-size: 30px;
+  font-family: var(--font-display, sans-serif);
+  font-size: clamp(1.5rem, 4vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
 }
 .fundraiser-widget .fw-raised {
-  margin-top: 3px;
-  color: rgba(0, 0, 0, 0.5);
+  margin-top: 0.2rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: var(--muted, #5b6875);
+  font-variant-numeric: tabular-nums;
 }
 .fundraiser-widget .fw-goal {
-  margin: 0.5rem 0;
+  margin: var(--s3, 0.75rem) 0;
+  font-family: var(--font-display, sans-serif);
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ink, #0e141b);
+  font-variant-numeric: tabular-nums;
 }
+.fundraiser-widget .fw-goal::before { content: none; }
 .fundraiser-widget .fw-btn {
-  padding: 5px 10px;
-  border-radius: 5px;
-  border: none;
-  background-color: #38ad24;
+  padding: 0.55rem 0.9rem;
+  min-height: 44px;
+  border-radius: var(--r, 0);
+  border: 1px solid var(--signal, #0f57c9);
+  background: var(--signal, #0f57c9);
   cursor: pointer;
-  transition: 200ms;
+  transition: background-color var(--t, 120ms) linear, border-color var(--t, 120ms) linear;
 }
 .fundraiser-widget .fw-btn:hover {
-  background-color: #2a851b;
-  transition: 200ms;
+  background: var(--signal-hi, #0b46a3);
+  border-color: var(--signal-hi, #0b46a3);
 }
 .fundraiser-widget .fw-btn span {
-  font-size: 17px;
-  color: white;
+  font-family: var(--font-mono, monospace);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--on-signal, #fff);
 }
 .fw-btn-ok {
-  background-color: #38ad24;
+  background-color: var(--signal, #0f57c9) !important;
+  border-radius: var(--r, 0) !important;
 }
-.swal-content table {
-  width: 100%;
-}
+.swal-content table { width: 100%; font-family: var(--font-mono, monospace); font-size: 0.82rem; }
+.swal-modal { border-radius: var(--r, 0) !important; background: var(--panel, #fff) !important; }
+.swal-title, .swal-text { color: var(--ink, #0e141b) !important; }
+
 @media (max-width: 600px) {
   .fundraiser-widget {
     float: none;
-    margin: 1.5rem auto;
+    margin: var(--s5, 1.5rem) auto;
     text-align: center;
   }
 }
