@@ -421,7 +421,7 @@ time,
 .hero-banner-content .hero-subtitle time { color: var(--on-media-2); }
 
 /* per-page hero art */
-.hero-banner--home     { --hero-image: image-set(url("/assets/images/hero-home.webp") type("image/webp"), url("/assets/images/hero-home.jpg") type("image/jpeg")); --hero-position: center 42%; }
+.hero-banner--home     { --hero-image: image-set(url("/assets/images/hero-home.webp") type("image/webp"), url("/assets/images/hero-home.jpg") type("image/jpeg")); --hero-position: center 48%; }
 .hero-banner--resume   { --hero-image: image-set(url("/assets/images/hero-resume.webp") type("image/webp"), url("/assets/images/hero-resume.jpg") type("image/jpeg")); --hero-position: center 44%; }
 .hero-banner--volunteer{ --hero-image: image-set(url("/assets/images/hero-volunteer.webp") type("image/webp"), url("/assets/images/hero-volunteer.jpg") type("image/jpeg")); --hero-position: center 54%; }
 .hero-banner--calendar { --hero-image: image-set(url("/assets/images/hero-calendar.webp") type("image/webp"), url("/assets/images/hero-calendar.jpg") type("image/jpeg")); --hero-position: center 38%; }
@@ -438,6 +438,106 @@ time,
 /* the volunteering register: Ukrainian blue and gold, used only here */
 .hero-banner--volunteer .hero-kicker,
 .hero-banner--post .hero-kicker { border-left-color: var(--ua-gold); }
+
+/* --------------------------------------------------------------------------
+   5b. Home hero — composed around the photograph
+   The subject stands in the left third looking right across open water, so the
+   text sits in the right half, on the water, roughly at his eye line. The scrim
+   runs left-to-right instead of top-to-bottom: it darkens only the half the
+   text occupies and leaves him untouched.
+   -------------------------------------------------------------------------- */
+.hero-banner--home {
+  /* keep the rendered box near 2.4:1 at every desktop width, so `cover` crops
+     the 3:2 photograph consistently instead of guillotining his head on the
+     wide ones */
+  min-height: clamp(430px, 42vw, 760px);
+  align-items: flex-end;
+}
+.hero-banner--home::after {
+  background:
+    linear-gradient(90deg,
+      transparent 0%,
+      transparent 22%,
+      rgba(8, 16, 26, 0.34) 40%,
+      rgba(8, 16, 26, 0.58) 58%,
+      rgba(8, 16, 26, 0.66) 100%),
+    linear-gradient(180deg, rgba(8, 16, 26, 0.22) 0%, transparent 32%);
+}
+.hero-banner--home .hero-banner-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.08fr);
+  /* sit the block on open water at roughly his eye line — centred, it lands on
+     the bright shoreline, and a flat percentage drifts as the crop changes */
+  padding-bottom: clamp(80px, calc(18vw - 100px), 250px);
+}
+.hero-banner--home .hero-banner-content > * { grid-column: 2; }
+.hero-banner--home .hero-banner-content .hero-subtitle {
+  color: #fff;
+  max-width: 32ch;
+}
+
+/* Tablet: the frame is close to the photograph's own 3:2, so he reads smaller
+   and further left — the text column can take more of the width. */
+@media (min-width: 600px) and (max-width: 899px) {
+  .hero-banner--home { min-height: clamp(400px, 54vw, 470px); }
+  .hero-banner--home .hero-banner-content {
+    grid-template-columns: minmax(0, 0.78fr) minmax(0, 1.22fr);
+    padding-bottom: clamp(60px, 10vw, 100px);
+  }
+  .hero-banner--home::after {
+    background:
+      linear-gradient(90deg,
+        transparent 0%,
+        transparent 18%,
+        rgba(8, 16, 26, 0.3) 38%,
+        rgba(8, 16, 26, 0.58) 58%,
+        rgba(8, 16, 26, 0.66) 100%),
+      linear-gradient(180deg, rgba(8, 16, 26, 0.22) 0%, transparent 32%);
+  }
+}
+
+/* Phone: side by side stops working — a portrait crop either buries the text in
+   his shoulder or crops him out. So the photograph becomes a plate that fades
+   into the page, and the text sits below it in ink. */
+@media (max-width: 599px) {
+  .hero-banner--home {
+    --hero-photo: 92vw;
+    display: block;
+    min-height: 0;
+    background: transparent;
+  }
+  .hero-banner--home::before,
+  .hero-banner--home::after {
+    inset: 0 0 auto 0;
+    height: var(--hero-photo);
+  }
+  .hero-banner--home::before {
+    transform: none;
+    background-position: 22% 44%;
+  }
+  .hero-banner--home::after {
+    background: linear-gradient(180deg,
+      transparent 0%,
+      transparent 60%,
+      color-mix(in srgb, var(--paper) 70%, transparent) 85%,
+      var(--paper) 100%);
+  }
+  .hero-banner--home .hero-banner-content {
+    display: block;
+    padding-top: calc(var(--hero-photo) + var(--s3));
+    padding-bottom: var(--s4);
+    color: var(--ink);
+  }
+  .hero-banner--home .hero-banner-content .hero-kicker {
+    color: var(--signal);
+    border-left-color: var(--signal);
+  }
+  .hero-banner--home .hero-banner-content .hero-title { color: var(--ink); }
+  .hero-banner--home .hero-banner-content .hero-subtitle {
+    color: var(--muted);
+    max-width: 40ch;
+  }
+}
 
 /* --------------------------------------------------------------------------
    6. Sections and panels
