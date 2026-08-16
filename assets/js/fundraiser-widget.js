@@ -54,14 +54,19 @@
 
     widget.appendChild(container);
 
-    // Init pie chart
+    // Init pie chart — colours come from the site tokens so it follows the theme
+    var css = getComputedStyle(document.documentElement);
+    var token = function (name, fallback) {
+      return (css.getPropertyValue(name) || '').trim() || fallback;
+    };
+
     $(chart).easyPieChart({
       size: 150,
-      barColor: '#36e617',
+      barColor: token('--signal', '#0f57c9'),
       scaleLength: 0,
       lineWidth: 15,
-      trackColor: '#525151',
-      lineCap: 'circle',
+      trackColor: token('--rule-strong', '#b6c1cc'),
+      lineCap: 'butt',
       animate: 1000
     });
 
