@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<title>Home - Yuriy Tkach</title>
+<meta name="description" content="Yuriy Tkach — software architect and team lead. Backend systems in Java and Scala, cloud-native architecture, engineering mentorship, and volunteer work supporting Ukraine." />
+<link rel="canonical" href="https://yuriytkach.com/" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Yuriy Tkach" />
+<meta property="og:title" content="Home" />
+<meta property="og:description" content="Yuriy Tkach — software architect and team lead. Backend systems in Java and Scala, cloud-native architecture, engineering mentorship, and volunteer work supporting Ukraine." />
+<meta property="og:url" content="https://yuriytkach.com/" />
+<meta property="og:image" content="https://yuriytkach.com/assets/images/hero-home.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Home" />
+<meta name="twitter:description" content="Yuriy Tkach — software architect and team lead. Backend systems in Java and Scala, cloud-native architecture, engineering mentorship, and volunteer work supporting Ukraine." />
+<meta name="twitter:image" content="https://yuriytkach.com/assets/images/hero-home.jpg" />
+<script>(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark')t='system';var r=document.documentElement;r.setAttribute('data-theme-pref',t);if(t!=='system')r.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Literata:opsz,wght@7..72,500;7..72,700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@300..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..700&display=swap" />
 <link rel="stylesheet" href="/assets/css/styles.css" />
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" href="/assets/images/hero-home.webp" />
 <script defer src="/assets/js/main.js"></script>
-  <title>Home - Yuriy Tkach</title>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-  <div class="wrap nav-row">
-    <a class="brand logo-brand" href="/"><img src="/assets/images/logo-software-developer.svg" alt="Yuriy Tkach" class="site-logo" /></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
-    <nav id="main-nav" class="site-nav" aria-label="Main navigation">
-      <a href="/" aria-current="page">Home</a>
-      <a href="/resume/">Experience</a>
-      <a href="/stats/">Stats</a>
-      <a href="/volunteer/">Volunteering</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-  </div>
-</header>
-  <main>
+    <div class="wrap nav-row">
+      <a class="brand" href="/" aria-label="Yuriy Tkach — home"><img src="/assets/images/logo-software-developer.svg" alt="Yuriy Tkach" class="site-logo" width="86" height="38" /></a>
+      <div class="nav-tools">
+        <nav id="main-nav" class="site-nav" aria-label="Main navigation">
+        <a href="/" aria-current="page">Home</a>
+        <a href="/resume/">Experience</a>
+        <a href="/stats/">Stats</a>
+        <a href="/volunteer/">Volunteering</a>
+        <a href="/contact/">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Colour theme: system. Activate to change." title="Theme: system"><svg class="ti ti-system" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor" stroke="none"/></svg><svg class="ti ti-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.6v2.2M12 19.2v2.2M21.4 12h-2.2M4.8 12H2.6M18.6 5.4l-1.6 1.6M7 17l-1.6 1.6M18.6 18.6 17 17M7 7 5.4 5.4"/></svg><svg class="ti ti-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 13.6A8.2 8.2 0 1 1 10.4 4a6.6 6.6 0 0 0 9.6 9.6Z"/></svg></button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3.5 7h17M3.5 12h17M3.5 17h17"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
 <div class="hero-banner hero-banner--home" data-parallax="hero">
   <div class="hero-banner-content wrap">
     <p class="hero-kicker">Systems Architect / Team Lead</p>
@@ -37,41 +57,43 @@
   <p class="lead lead--feature">I build robust backend systems, design scalable architecture, and support teams through pragmatic engineering leadership across Java, Scala, and cloud-native stacks.</p>
 </section>
 <section class="wrap about-section">
-  <h2 class="about-heading"><span class="about-brace">#</span> brief about(me) <span class="about-brace">{</span></h2>
+  <h2 class="about-heading no-mark"><span class="about-brace">#</span> brief about(me) <span class="about-brace">{</span></h2>
   <p class="about-body">My journey in software engineering began with a fascination for making things work—from early console programs in Pascal to today's complex, cloud-native enterprise systems. While my tech stack has evolved through C++, Java, and Scala, my core drive remains the same: designing elegant architectures and solving hard problems. Beyond writing code, I'm passionate about pragmatic leadership. I love mentoring teams, finding innovative solutions, and building systems that are as maintainable and testable as they are robust.</p>
   <p class="about-close"><span class="about-brace">}</span></p>
 </section>
-<section class="section wrap feature-grid cards-2">
-  <a class="feature-card feature-card--resume" href="/resume/">
-    <span class="feature-card-media" aria-hidden="true"></span>
-    <span class="feature-card-content">
-      <span class="feature-card-title">Experience</span>
-      <span class="feature-card-text">Hands-on architecture and software development across fintech, blockchain, productivity tooling, and enterprise systems.</span>
-    </span>
-  </a>
-  <a class="feature-card feature-card--youtube" href="https://www.youtube.com/user/ytkach" target="_blank" rel="noopener">
-    <span class="feature-card-media" aria-hidden="true"></span>
-    <span class="feature-card-content">
-      <span class="feature-card-title">Teaching and community</span>
-      <span class="feature-card-text">Long-running education work through training programs and videos for engineers at multiple experience levels.</span>
-    </span>
-  </a>
+<section class="wrap section">
+  <div class="feature-grid cards-2">
+    <a class="feature-card feature-card--resume" href="/resume/">
+      <span class="feature-card-media" aria-hidden="true"></span>
+      <span class="feature-card-content">
+        <span class="feature-card-title">Experience</span>
+        <span class="feature-card-text">Hands-on architecture and software development across fintech, blockchain, productivity tooling, and enterprise systems.</span>
+      </span>
+    </a>
+    <a class="feature-card feature-card--youtube" href="https://www.youtube.com/user/ytkach" target="_blank" rel="noopener">
+      <span class="feature-card-media" aria-hidden="true"></span>
+      <span class="feature-card-content">
+        <span class="feature-card-title">Teaching and community</span>
+        <span class="feature-card-text">Long-running education work through training programs and videos for engineers at multiple experience levels.</span>
+      </span>
+    </a>
+  </div>
 </section>
 </main>
   <footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div>
-      <a href="mailto:me@yuriytkach.com">me@yuriytkach.com</a>
+    <div class="wrap">
+      <div class="footer-grid">
+        <a href="mailto:me@yuriytkach.com">me@yuriytkach.com</a>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/yuriytkach" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/yuriytkach" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.youtube.com/channel/UCdXqgQdGW5go6nkkBbUVSMA" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.buymeacoffee.com/ytkach" target="_blank" rel="noopener">Buy Me a Coffee</a>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> Yuriy Tkach · Built as plain HTML, no tracking</p>
     </div>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/yuriytkach" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/yuriytkach" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.youtube.com/channel/UCdXqgQdGW5go6nkkBbUVSMA" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://www.buymeacoffee.com/ytkach" target="_blank" rel="noopener">Buy Me a Coffee</a>
-    </div>
-  </div>
-  <p class="copyright">&copy; <span id="year"></span> Yuriy Tkach</p>
-</footer>
+  </footer>
   
 </body>
 </html>
