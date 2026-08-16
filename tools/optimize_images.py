@@ -35,6 +35,12 @@ RULES = [
     (IMAGES / "posts", 1500, 82),  # covers, photos, receipts (kept legible when zoomed)
 ]
 
+# The home hero is the tallest on the site, so `cover` scales it by width on a
+# wide display and 1800px starts to soften. It is also the page's LCP image, and
+# rippled water is expensive to encode — hence the lower quality to compensate.
+WIDTH_OVERRIDES = {"hero-home": 2000}
+QUALITY_OVERRIDES = {"hero-home": 72}
+
 # Post photographs are served through <picture>, so every one gets a WebP.
 # Many of them are photographs that were saved as PNG, where the saving is large.
 POSTS = IMAGES / "posts"
@@ -64,6 +70,8 @@ def process(path: Path, max_w: int, quality: int, dry: bool) -> tuple[int, int]:
 
     fmt = (im.format or "").upper()
     w, h = im.size
+    max_w = WIDTH_OVERRIDES.get(path.stem, max_w)
+    quality = QUALITY_OVERRIDES.get(path.stem, quality)
     resized = w > max_w
     if resized:
         im = im.resize((max_w, round(h * max_w / w)), Image.LANCZOS)
@@ -71,10 +79,16 @@ def process(path: Path, max_w: int, quality: int, dry: bool) -> tuple[int, int]:
     stem = path.stem
     want_webp = stem in BACKGROUNDS or path.parent == POSTS
     webp_path = path.with_suffix(".webp")
+    need_webp = want_webp and not webp_path.exists()
 
     if dry:
         note = f"{w}x{h} -> {im.size[0]}x{im.size[1]}" if resized else f"{w}x{h} (kept)"
         print(f"  {path.name:52s} {human(before):>9s}  {note}")
+        return before, before
+
+    # Already at the target size with its WebP in place: leave it alone. JPEG is
+    # lossy, so re-encoding an untouched file only degrades it and churns git.
+    if not resized and not need_webp:
         return before, before
 
     if fmt == "PNG":
@@ -105,23 +119,25 @@ def build_thumbnails(dry: bool) -> None:
     if not dry:
         THUMBS.mkdir(exist_ok=True)
 
-    total = 0
+    written = 0
     for cover in sorted(covers):
         src = ROOT / cover.lstrip("/")
         if not src.exists():
             print(f"  ! missing cover {cover}")
             continue
         out = THUMBS / (src.stem + ".webp")
-        if dry:
+        if dry or (out.exists() and out.stat().st_mtime >= src.stat().st_mtime):
             continue
         im = Image.open(src)
         w, h = im.size
         if w > THUMB_WIDTH:
             im = im.resize((THUMB_WIDTH, round(h * THUMB_WIDTH / w)), Image.LANCZOS)
         im.convert("RGB").save(out, "WEBP", quality=76, method=6)
-        total += out.stat().st_size
+        written += 1
 
-    print(f"\n{THUMBS.relative_to(ROOT)}  {len(covers)} cover thumbnails, {human(total)} total")
+    total = sum(p.stat().st_size for p in THUMBS.glob("*.webp")) if THUMBS.exists() else 0
+    print(f"\n{THUMBS.relative_to(ROOT)}  {len(covers)} cover thumbnails "
+          f"({written} rebuilt), {human(total)} total")
 
 
 def main() -> None:
