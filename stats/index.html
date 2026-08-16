@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+<meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="color-scheme" content="light dark" />
+<title>Coding Stats - Yuriy Tkach</title>
+<meta name="description" content="GitHub contributions and coding activity for Yuriy Tkach — what I work on, in which languages, and when." />
+<link rel="canonical" href="https://yuriytkach.com/stats/" />
+<link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Yuriy Tkach" />
+<meta property="og:title" content="Coding Stats" />
+<meta property="og:description" content="GitHub contributions and coding activity for Yuriy Tkach — what I work on, in which languages, and when." />
+<meta property="og:url" content="https://yuriytkach.com/stats/" />
+<meta property="og:image" content="https://yuriytkach.com/assets/images/hero-stats.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Coding Stats" />
+<meta name="twitter:description" content="GitHub contributions and coding activity for Yuriy Tkach — what I work on, in which languages, and when." />
+<meta name="twitter:image" content="https://yuriytkach.com/assets/images/hero-stats.jpg" />
+<script>(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark')t='system';var r=document.documentElement;r.setAttribute('data-theme-pref',t);if(t!=='system')r.setAttribute('data-theme',t);}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Literata:opsz,wght@7..72,500;7..72,700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geologica:wght@300..800&family=IBM+Plex+Mono:wght@400;500;600&family=Literata:opsz,wght@7..72,400..700&display=swap" />
 <link rel="stylesheet" href="/assets/css/styles.css" />
+<link rel="preload" as="image" type="image/webp" fetchpriority="high" href="/assets/images/hero-stats.webp" />
 <script defer src="/assets/js/main.js"></script>
-  <title>Coding Stats - Yuriy Tkach</title>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-  <div class="wrap nav-row">
-    <a class="brand logo-brand" href="/"><img src="/assets/images/logo-software-developer.svg" alt="Yuriy Tkach" class="site-logo" /></a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
-    <nav id="main-nav" class="site-nav" aria-label="Main navigation">
-      <a href="/">Home</a>
-      <a href="/resume/">Experience</a>
-      <a href="/stats/" aria-current="page">Stats</a>
-      <a href="/volunteer/">Volunteering</a>
-      <a href="/contact/">Contact</a>
-    </nav>
-  </div>
-</header>
-  <main>
+    <div class="wrap nav-row">
+      <a class="brand" href="/" aria-label="Yuriy Tkach — home"><img src="/assets/images/logo-software-developer.svg" alt="Yuriy Tkach" class="site-logo" width="86" height="38" /></a>
+      <div class="nav-tools">
+        <nav id="main-nav" class="site-nav" aria-label="Main navigation">
+        <a href="/">Home</a>
+        <a href="/resume/">Experience</a>
+        <a href="/stats/" aria-current="page">Stats</a>
+        <a href="/volunteer/">Volunteering</a>
+        <a href="/contact/">Contact</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Colour theme: system. Activate to change." title="Theme: system"><svg class="ti ti-system" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 0 0 16Z" fill="currentColor" stroke="none"/></svg><svg class="ti ti-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><path d="M12 2.6v2.2M12 19.2v2.2M21.4 12h-2.2M4.8 12H2.6M18.6 5.4l-1.6 1.6M7 17l-1.6 1.6M18.6 18.6 17 17M7 7 5.4 5.4"/></svg><svg class="ti ti-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 13.6A8.2 8.2 0 1 1 10.4 4a6.6 6.6 0 0 0 9.6 9.6Z"/></svg></button>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3.5 7h17M3.5 12h17M3.5 17h17"/></svg></button>
+      </div>
+    </div>
+  </header>
+  <main id="main">
 <div class="hero-banner hero-banner--stats" data-parallax="hero">
   <div class="hero-banner-content wrap">
     <p class="hero-kicker">Developer Activity</p>
@@ -39,17 +59,20 @@
 
   <div class="stat-card card">
     <p class="stat-label">Contribution graph for the past year across all repositories, including private and organization repos</p>
-    <img src="https://ghchart.rshah.org/1f6b5b/yuriytkach" alt="GitHub contribution graph" class="stat-img" />
+    <div class="stat-scroll">
+      <img src="https://ghchart.rshah.org/0f57c9/yuriytkach" alt="GitHub contribution graph for the past year" class="stat-img" loading="lazy" />
+    </div>
+    <p class="scroll-hint">Scroll sideways to see the whole year →</p>
   </div>
 
   <div class="stats-grid">
     <div class="stat-card card">
       <p class="stat-label">Public repositories only</p>
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuriytkach&theme=default" alt="GitHub stats" style="width:340px;max-width:100%;height:auto;display:block;margin:0 auto" />
+      <div class="stat-plate"><img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=yuriytkach&theme=default" alt="GitHub statistics summary" class="stat-img stat-img--card" loading="lazy" /></div>
     </div>
     <div class="stat-card card">
       <p class="stat-label">Public repositories only</p>
-      <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuriytkach&theme=default" alt="Top languages" style="width:340px;max-width:100%;height:auto;display:block;margin:0 auto" />
+      <div class="stat-plate"><img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=yuriytkach&theme=default" alt="Most-used languages across public repositories" class="stat-img stat-img--card" loading="lazy" /></div>
     </div>
   </div>
 </section>
@@ -59,28 +82,30 @@
 
   <div class="stats-grid">
     <div class="stat-card stat-card--zoomable card" data-lightbox="https://wakatime.com/share/@c9481947-6b81-4eda-99eb-170787cad4dd/f5a1453e-a387-46ac-a8ba-c287387f21ca.svg">
-      <embed src="https://wakatime.com/share/@c9481947-6b81-4eda-99eb-170787cad4dd/f5a1453e-a387-46ac-a8ba-c287387f21ca.svg" class="stat-img" />
+      <p class="stat-label">Weekly coding time, via WakaTime</p>
+      <div class="stat-plate"><embed src="https://wakatime.com/share/@c9481947-6b81-4eda-99eb-170787cad4dd/f5a1453e-a387-46ac-a8ba-c287387f21ca.svg" class="stat-img" /></div>
     </div>
     <div class="stat-card stat-card--zoomable card" data-lightbox="https://wakatime.com/share/@c9481947-6b81-4eda-99eb-170787cad4dd/8a3fbcf5-dbc9-48a8-a830-18b40c36a130.svg">
-      <embed src="https://wakatime.com/share/@c9481947-6b81-4eda-99eb-170787cad4dd/8a3fbcf5-dbc9-48a8-a830-18b40c36a130.svg" class="stat-img" />
+      <p class="stat-label">Languages over the last year, via WakaTime</p>
+      <div class="stat-plate"><embed src="https://wakatime.com/share/@c9481947-6b81-4eda-99eb-170787cad4dd/8a3fbcf5-dbc9-48a8-a830-18b40c36a130.svg" class="stat-img" /></div>
     </div>
   </div>
 </section>
 
 </main>
   <footer class="site-footer">
-  <div class="wrap footer-grid">
-    <div>
-      <a href="mailto:me@yuriytkach.com">me@yuriytkach.com</a>
+    <div class="wrap">
+      <div class="footer-grid">
+        <a href="mailto:me@yuriytkach.com">me@yuriytkach.com</a>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/yuriytkach" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://github.com/yuriytkach" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.youtube.com/channel/UCdXqgQdGW5go6nkkBbUVSMA" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.buymeacoffee.com/ytkach" target="_blank" rel="noopener">Buy Me a Coffee</a>
+        </div>
+      </div>
+      <p class="copyright">&copy; <span id="year">2026</span> Yuriy Tkach · Built as plain HTML, no tracking</p>
     </div>
-    <div class="footer-links">
-      <a href="https://www.linkedin.com/in/yuriytkach" target="_blank" rel="noopener">LinkedIn</a>
-      <a href="https://github.com/yuriytkach" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://www.youtube.com/channel/UCdXqgQdGW5go6nkkBbUVSMA" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://www.buymeacoffee.com/ytkach" target="_blank" rel="noopener">Buy Me a Coffee</a>
-    </div>
-  </div>
-  <p class="copyright">&copy; <span id="year"></span> Yuriy Tkach</p>
-</footer>
+  </footer>
 </body>
 </html>
