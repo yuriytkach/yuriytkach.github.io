@@ -253,7 +253,7 @@ def build_footer() -> str:
 {links}
         </div>
       </div>
-      <p class="copyright">&copy; <span id="year">{date.today().year}</span> Yuriy Tkach · Built as plain HTML, no tracking</p>
+      <p class="copyright">&copy; <span id="year">{date.today().year}</span> Yuriy Tkach <span class="copyright-note">Built as plain HTML, no tracking</span></p>
     </div>
   </footer>"""
 

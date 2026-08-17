@@ -499,23 +499,27 @@ time,
 /* Phone: side by side stops working — a portrait crop either buries the text in
    his shoulder or crops him out. So the photograph becomes a plate that fades
    into the page, and the text sits below it in ink. */
+/* the class is doubled on purpose: the shared phone rules in section 15 come
+   later in the file at the same specificity, and would otherwise re-apply
+   `min-height: 340px` and the `scale(1.03)` zoom — the zoom pushes the photo
+   layer below the fade layer and leaves a hard, unfaded edge. */
 @media (max-width: 599px) {
-  .hero-banner--home {
+  .hero-banner.hero-banner--home {
     --hero-photo: 92vw;
     display: block;
     min-height: 0;
     background: transparent;
   }
-  .hero-banner--home::before,
-  .hero-banner--home::after {
+  .hero-banner.hero-banner--home::before,
+  .hero-banner.hero-banner--home::after {
     inset: 0 0 auto 0;
     height: var(--hero-photo);
   }
-  .hero-banner--home::before {
+  .hero-banner.hero-banner--home::before {
     transform: none;
     background-position: 22% 44%;
   }
-  .hero-banner--home::after {
+  .hero-banner.hero-banner--home::after {
     background: linear-gradient(180deg,
       transparent 0%,
       transparent 60%,
@@ -1101,6 +1105,9 @@ time,
   font-size: 0.72rem;
   letter-spacing: 0.06em;
 }
+/* the middot belongs to the note, so dropping it and the note together turns
+   one wrapped line into two whole ones on a phone */
+.copyright-note::before { content: "· "; }
 
 /* --------------------------------------------------------------------------
    14. Lightbox
@@ -1203,6 +1210,9 @@ time,
   .post-sibling--next { text-align: left; align-items: flex-start; }
 
   .footer-grid { flex-direction: column; align-items: flex-start; gap: var(--s3); }
+
+  .copyright-note { display: block; }
+  .copyright-note::before { content: none; }
 }
 
 @media (max-width: 600px) {
